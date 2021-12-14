@@ -14,6 +14,7 @@
 		13EB739C27692AAD00CE7C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EB739B27692AAD00CE7C30 /* Assets.xcassets */; };
 		13EB739F27692AAD00CE7C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EB739D27692AAD00CE7C30 /* LaunchScreen.storyboard */; };
 		13EB73A727692B5C00CE7C30 /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB73A627692B5C00CE7C30 /* ViewController+Problem1.swift */; };
+		13EB73A9276932BA00CE7C30 /* ViewController+Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB73A8276932BA00CE7C30 /* ViewController+Problem2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		13EB739E27692AAD00CE7C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13EB73A027692AAD00CE7C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EB73A627692B5C00CE7C30 /* ViewController+Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem1.swift"; sourceTree = "<group>"; };
+		13EB73A8276932BA00CE7C30 /* ViewController+Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				13EB739427692AAB00CE7C30 /* SceneDelegate.swift */,
 				13EB739627692AAB00CE7C30 /* ViewController.swift */,
 				13EB73A627692B5C00CE7C30 /* ViewController+Problem1.swift */,
+				13EB73A8276932BA00CE7C30 /* ViewController+Problem2.swift */,
 				13EB739827692AAB00CE7C30 /* Main.storyboard */,
 				13EB739B27692AAD00CE7C30 /* Assets.xcassets */,
 				13EB739D27692AAD00CE7C30 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				13EB73A727692B5C00CE7C30 /* ViewController+Problem1.swift in Sources */,
 				13EB739727692AAB00CE7C30 /* ViewController.swift in Sources */,
 				13EB739327692AAB00CE7C30 /* AppDelegate.swift in Sources */,
+				13EB73A9276932BA00CE7C30 /* ViewController+Problem2.swift in Sources */,
 				13EB739527692AAB00CE7C30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
