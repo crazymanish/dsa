@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        solution1()
     }
 
-
+    private func solution1() {
+        let inputArray = ["1", "2", "3", "4", "5", "6", "7"]
+        rotate(inputArray: inputArray, digits: 2, size: inputArray.count)
+    }
 }
 
