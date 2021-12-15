@@ -11,8 +11,8 @@ Data Structure Goals:
 - [ ] LinkList
 - [ ] Stack
 - [ ] Queue 
-- [ ] Tree (Binary tree, Binary Search tree, Heap)
 - [ ] Hashing
+- [ ] Tree (Binary tree, Binary Search tree, Heap)
 - [ ] Graph 
 
 Algorithms Goals:
