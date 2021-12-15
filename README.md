@@ -6,6 +6,24 @@ Data Structure &amp; Algorithms (Swift language)
 ------
 **Consistency tracker:** 14 dec 2021 - till today ![![002 days]](https://img.shields.io/badge/002-days-green.svg?style=flat)
 
+Data Structure Goals:
+- [ ] Array `Inprogress`
+- [ ] LinkList
+- [ ] Stack
+- [ ] Queue 
+- [ ] Tree (Binary tree, Binary Search tree, Heap)
+- [ ] Hashing
+- [ ] Graph 
+
+Algorithms Goals:
+- [ ] Searching and Sorting
+- [ ] String based algorithms (pattern matching)
+- [ ] Dynamic Programming
+- [ ] Greedy
+- [ ] Backtracking
+- [ ] Graph algorithms
+- [ ] Divide and Conquer
+
 Day1: 14-dec-2021
 - [x] [Write a function rotate(ar[], d, n) that rotates arr[] of size n by d elements.](https://www.geeksforgeeks.org/array-rotation/) - [Solution](https://github.com/crazymanish/dsa/blob/main/Day1/Day1/ViewController%2BProblem1.swift)
 - [x] [Reversal algorithm for array rotation](https://www.geeksforgeeks.org/program-for-array-rotation-continued-reversal-algorithm/) - [Solution](https://github.com/crazymanish/dsa/blob/main/Day1/Day1/ViewController%2BProblem2.swift)
