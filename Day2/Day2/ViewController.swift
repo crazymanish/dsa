@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     }
 
     private func solution2() {
-//        let inputArray = ["1", "2", "3", "4", "5", "6", "7"]
-//        reversalRotate(inputArray: inputArray, digits: 2, size: inputArray.count)
+        let inputArray = ["1", "2", "3", "4", "5", "6", "7"]
+        cyclicallyRotateBy1(inputArray: inputArray, size: inputArray.count)
     }
 }
 
