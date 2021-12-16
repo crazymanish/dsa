@@ -11,9 +11,24 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        print("--------Problem 1--------")
+        solution1()
+        print("--------Problem 2--------")
+        solution2()
     }
 
+    private func solution1() {
+        var inputArray = [5, 6, 7, 8, 9, 10, 1, 2, 3]
+        findItemInSortedRotatedArray(inputArray: inputArray, item: 3)
 
+        inputArray = [5, 6, 7, 8, 9, 10, 1, 2, 3]
+        findItemInSortedRotatedArray(inputArray: inputArray, item: 30)
+
+        inputArray = [30, 40, 50, 10, 20]
+        findItemInSortedRotatedArray(inputArray: inputArray, item: 10)
+    }
+
+    private func solution2() {}
 }
 

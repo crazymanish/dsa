@@ -13,6 +13,7 @@
 		132B325C276BC5B8008011CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132B325A276BC5B8008011CC /* Main.storyboard */; };
 		132B325E276BC5BB008011CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 132B325D276BC5BB008011CC /* Assets.xcassets */; };
 		132B3261276BC5BB008011CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132B325F276BC5BB008011CC /* LaunchScreen.storyboard */; };
+		132B3269276BC620008011CC /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132B3268276BC620008011CC /* ViewController+Problem1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		132B325D276BC5BB008011CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		132B3260276BC5BB008011CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		132B3262276BC5BB008011CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132B3268276BC620008011CC /* ViewController+Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				132B3254276BC5B8008011CC /* AppDelegate.swift */,
 				132B3256276BC5B8008011CC /* SceneDelegate.swift */,
 				132B3258276BC5B8008011CC /* ViewController.swift */,
+				132B3268276BC620008011CC /* ViewController+Problem1.swift */,
 				132B325A276BC5B8008011CC /* Main.storyboard */,
 				132B325D276BC5BB008011CC /* Assets.xcassets */,
 				132B325F276BC5BB008011CC /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132B3269276BC620008011CC /* ViewController+Problem1.swift in Sources */,
 				132B3259276BC5B8008011CC /* ViewController.swift in Sources */,
 				132B3255276BC5B8008011CC /* AppDelegate.swift in Sources */,
 				132B3257276BC5B8008011CC /* SceneDelegate.swift in Sources */,
