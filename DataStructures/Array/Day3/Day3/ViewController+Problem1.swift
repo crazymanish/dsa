@@ -33,14 +33,14 @@ extension ViewController {
 
         let index = binarySearchRotate(inputArray: inputArray, item: item)
 
-        if index == -1 {
-            print("Not found")
-        } else {
+        if let index = index {
             print("Found at index \(index)")
+        } else {
+            print("Not found")
         }
     }
 
-    private func binarySearchRotate(inputArray: [Int], item: Int) -> Int {
+    private func binarySearchRotate(inputArray: [Int], item: Int) -> Int? {
         var lowIndex = 0
         var highIndex = inputArray.count - 1
         var midIndex = -1
@@ -67,7 +67,7 @@ extension ViewController {
             }
         }
 
-        return -1
+        return nil
     }
 }
 
