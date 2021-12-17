@@ -18,7 +18,13 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        var inputArray = [1, 20, 2, 10]
+        maximumRotatedSum(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [10, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        maximumRotatedSum(inputArray: inputArray, size: inputArray.count)
+    }
 
     private func solution2() {
         var inputArray = [8, 3, 1, 2]

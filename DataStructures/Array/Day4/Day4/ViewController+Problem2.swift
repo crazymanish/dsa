@@ -55,7 +55,7 @@ extension ViewController {
             let rotatedSum = initialSum - sumOfAllElements + inputArray[index-1] * size
             print("Next rotation sum: \(rotatedSum)")
 
-            maximumSum = max(maximumSum, rotatedSum)
+            if rotatedSum > maximumSum { maximumSum = rotatedSum }
         }
 
         print("Output: \(maximumSum)")
