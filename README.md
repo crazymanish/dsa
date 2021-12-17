@@ -38,4 +38,4 @@ Day3: 16-dec-2021
 
 Day4: 17-dec-2021
 - [x] [Find maximum value of Sum( i*arr[i]) with only rotations on given array allowed](https://www.geeksforgeeks.org/find-maximum-value-of-sum-iarri-with-only-rotations-on-given-array-allowed/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day4/Day4/ViewController%2BProblem1.swift)
-- [x] [Maximum sum of i*arr[i] among all rotations of a given array](https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day4/Day4/ViewController%2BProblem2.swift)
+- [x] [Maximum sum of i*arr[i] among all rotations of a given array](https://www.geeksforgeeks.org/maximum-sum-iarri-among-rotations-given-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day4/Day4/ViewController%2BProblem2.swift)
