@@ -20,6 +20,12 @@ class ViewController: UIViewController {
 
     private func solution1() {}
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [8, 3, 1, 2]
+        maximumSum(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [3, 2, 1]
+        maximumSum(inputArray: inputArray, size: inputArray.count)
+    }
 }
 
