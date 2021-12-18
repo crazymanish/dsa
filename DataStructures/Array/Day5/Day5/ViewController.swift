@@ -29,6 +29,15 @@ class ViewController: UIViewController {
         rotationCount(inputArray: inputArray, size: inputArray.count)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [1, 3, 5, 7, 9]
+        printRotation(inputArray: inputArray, size: inputArray.count, rotationCount: 1)
+        printRotation(inputArray: inputArray, size: inputArray.count, rotationCount: 3)
+        printRotation(inputArray: inputArray, size: inputArray.count, rotationCount: 4)
+        printRotation(inputArray: inputArray, size: inputArray.count, rotationCount: 6)
+
+        inputArray = [1, 3, 5, 7, 9]
+        printRotation(inputArray: inputArray, size: inputArray.count, rotationCount: 14)
+    }
 }
 
