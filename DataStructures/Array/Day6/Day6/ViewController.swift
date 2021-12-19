@@ -18,7 +18,16 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        var inputArray = [5, 6, 1, 2, 3, 4]
+        findMinimumElement(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [1, 2, 3, 4]
+        findMinimumElement(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [2, 1]
+        findMinimumElement(inputArray: inputArray, size: inputArray.count)
+    }
 
     private func solution2() {}
 }
