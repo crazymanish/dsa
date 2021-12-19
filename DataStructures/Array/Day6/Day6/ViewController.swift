@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         findMinimumElement(inputArray: inputArray, size: inputArray.count)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        rightReverse(inputArray: inputArray, size: inputArray.count, rotationCount: 3)
+
+        inputArray = [121, 232, 33, 43, 5]
+        rightReverse(inputArray: inputArray, size: inputArray.count, rotationCount: 2)
+    }
 }
 
