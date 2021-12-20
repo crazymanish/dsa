@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![002 days]](https://img.shields.io/badge/006-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/007-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [ ] Array `Inprogress`
@@ -47,4 +47,8 @@ Day5: 18-dec-2021
 Day6: 19-dec-2021
 - [x] [Find the minimum element in a sorted and rotated array](https://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day6/Day6/ViewController%2BProblem1.swift)
 - [x] [Reversal algorithm for right rotation of an array](https://www.geeksforgeeks.org/reversal-algorithm-right-rotation-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day6/Day6/ViewController%2BProblem2.swift)
+
+Day7: 20-dec-2021
+- [x] [Print left rotation of array](https://www.geeksforgeeks.org/print-left-rotation-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day7/Day7/ViewController%2BProblem1.swift)
+- [x] [Split the array and add the first part to the end](https://www.geeksforgeeks.org/split-array-add-first-part-end/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day7/Day7/ViewController%2BProblem2.swift)
 
