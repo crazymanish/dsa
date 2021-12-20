@@ -21,14 +21,20 @@ class ViewController: UIViewController {
     private func solution1() {
         let inputArray = [1, 3, 5, 7, 9]
 
-        printLeftRotation(inputArray: inputArray, size: 5, noOfRotation: 1)
-        printLeftRotation(inputArray: inputArray, size: 5, noOfRotation: 3)
-        printLeftRotation(inputArray: inputArray, size: 5, noOfRotation: 4)
-        printLeftRotation(inputArray: inputArray, size: 5, noOfRotation: 6)
-        printLeftRotation(inputArray: inputArray, size: 5, noOfRotation: 14)
+        printLeftRotation(inputArray: inputArray, size: inputArray.count, noOfRotation: 1)
+        printLeftRotation(inputArray: inputArray, size: inputArray.count, noOfRotation: 3)
+        printLeftRotation(inputArray: inputArray, size: inputArray.count, noOfRotation: 4)
+        printLeftRotation(inputArray: inputArray, size: inputArray.count, noOfRotation: 6)
+        printLeftRotation(inputArray: inputArray, size: inputArray.count, noOfRotation: 14)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [12, 10, 5, 6, 52, 36]
+        splitAndMerge(inputArray: inputArray, size: inputArray.count, splitIndex: 2)
+
+        inputArray = [3, 1, 2]
+        splitAndMerge(inputArray: inputArray, size: inputArray.count, splitIndex: 1)
+    }
 }
 
 extension Array where Element == Int {
