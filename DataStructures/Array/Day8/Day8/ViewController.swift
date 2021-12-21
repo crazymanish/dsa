@@ -18,7 +18,13 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        var inputArray = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]
+        rearrange(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [19, 7, 0, 3, 18, 15, 12, 6, 1, 8, 11, 10, 9, 5, 13, 16, 2, 14, 17, 4]
+        rearrange(inputArray: inputArray, size: inputArray.count)
+    }
 
     private func solution2() {}
 }
