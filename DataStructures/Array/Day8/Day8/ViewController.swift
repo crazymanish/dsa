@@ -26,7 +26,13 @@ class ViewController: UIViewController {
         rearrange(inputArray: inputArray, size: inputArray.count)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [1, 2, 3]
+        reverse(inputArray: inputArray, size: inputArray.count)
+
+        inputArray = [4, 5, 1, 2]
+        reverse(inputArray: inputArray, size: inputArray.count)
+    }
 }
 
 extension Array where Element == Int {
