@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/008-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/009-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [ ] Array `Inprogress`
@@ -55,4 +55,8 @@ Day7: 20-dec-2021
 Day8: 21-dec-2021
 - [x] [Rearrange an array such that arr[i] = i](https://www.geeksforgeeks.org/rearrange-array-arri/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day8/Day8/ViewController%2BProblem1.swift)
 - [x] [Write a program to reverse an array or string](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Array/Day8/Day8/ViewController%2BProblem2.swift)
+
+Day9: 21-dec-2021
+- [x] [Linked List | Inserting a node](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L29)
+- [x] [Linked List | Deleting a node](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyLinkedList/SinglyLinkedList.swift#L40)
 
