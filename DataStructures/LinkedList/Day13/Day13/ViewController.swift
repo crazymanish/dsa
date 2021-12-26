@@ -11,9 +11,21 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        print("--------Problem 1--------")
+        solution1()
+        print("--------Problem 2--------")
+        solution2()
     }
 
+    private func solution1() {
+        var inputArray = [1, 2, 3, 4, 5]
+        findMiddleItem(inputArray: inputArray)
 
+        inputArray = [1, 2, 3, 4, 5, 6]
+        findMiddleItem(inputArray: inputArray)
+    }
+
+    private func solution2() {}
 }
 
