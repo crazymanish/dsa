@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         findMiddleItem(inputArray: inputArray)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        let inputArray = [1, 2, 1, 2, 1, 3, 1]
+        occurrenceCount(inputArray: inputArray, item: 1)
+    }
 }
 
