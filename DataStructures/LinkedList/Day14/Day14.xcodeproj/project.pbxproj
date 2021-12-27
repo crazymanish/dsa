@@ -15,6 +15,7 @@
 		132A6B14277A199D00C1A291 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 132A6B12277A199D00C1A291 /* LaunchScreen.storyboard */; };
 		132A6B1C277A19BE00C1A291 /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A6B1B277A19BE00C1A291 /* ViewController+Problem1.swift */; };
 		132A6B1E277A19CA00C1A291 /* ViewController+Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A6B1D277A19CA00C1A291 /* ViewController+Problem2.swift */; };
+		132A6B21277A1C7500C1A291 /* dsa-reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 132A6B20277A1C7500C1A291 /* dsa-reusable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				132A6B21277A1C7500C1A291 /* dsa-reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = Day14;
+			packageProductDependencies = (
+				132A6B20277A1C7500C1A291 /* dsa-reusable */,
+			);
 			productName = Day14;
 			productReference = 132A6B04277A199A00C1A291 /* Day14.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 132A6AFB277A199A00C1A291;
+			packageReferences = (
+				132A6B1F277A1C7500C1A291 /* XCRemoteSwiftPackageReference "dsa-reusable" */,
+			);
 			productRefGroup = 132A6B05277A199A00C1A291 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		132A6B1F277A1C7500C1A291 /* XCRemoteSwiftPackageReference "dsa-reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crazymanish/dsa-reusable";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		132A6B20277A1C7500C1A291 /* dsa-reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 132A6B1F277A1C7500C1A291 /* XCRemoteSwiftPackageReference "dsa-reusable" */;
+			productName = "dsa-reusable";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 132A6AFC277A199A00C1A291 /* Project object */;
 }

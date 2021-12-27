@@ -18,7 +18,9 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        detectLinkedListLoop()
+    }
 
     private func solution2() {}
 }
