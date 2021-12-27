@@ -22,5 +22,7 @@ class ViewController: UIViewController {
         detectLinkedListLoop()
     }
 
-    private func solution2() {}
+    private func solution2() {
+        findLinkedListLoopCount()
+    }
 }

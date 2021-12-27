@@ -45,11 +45,11 @@ extension ViewController {
         }
     }
 
-    func hasLoop(linkedList: SinglyLinkedList<Int>) -> Bool {
+    private func hasLoop(linkedList: SinglyLinkedList<Int>) -> Bool {
         if linkedList.isEmpty { return false }
 
         var slowPointer = linkedList.head
-        var fastPointer = linkedList.head
+        var fastPointer = linkedList.head?.nextNode
 
         while slowPointer != nil {
             if slowPointer?.data == fastPointer?.data { return true }
