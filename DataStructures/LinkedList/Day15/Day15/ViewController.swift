@@ -18,7 +18,16 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        var inputArray = ["R", "A", "D", "A", "R"]
+        checkPalindromeLinkedList(inputArray: inputArray)
+
+        inputArray = ["R", "A", "D", "A", "R", "!"]
+        checkPalindromeLinkedList(inputArray: inputArray)
+
+        inputArray = ["R", "A", "M", "A"]
+        checkPalindromeLinkedList(inputArray: inputArray)
+    }
 
     private func solution2() {}
 }
