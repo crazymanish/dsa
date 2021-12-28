@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/014-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/015-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -77,5 +77,9 @@ Day13: 26-dec-2021
 - [x] [Write a function that counts the number of times a given int occurs in a Linked List](https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day13/Day13/ViewController%2BProblem2.swift)
 
 Day14: 27-dec-2021
-- [x] [https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day14/Day14/ViewController%2BProblem1.swift)
+- [x] [Detect loop in a linked list](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day14/Day14/ViewController%2BProblem1.swift)
 - [x] [Find length of loop in linked list](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day14/Day14/ViewController%2BProblem2.swift)
+
+Day15: 28-dec-2021
+- [x] [Function to check if a singly linked list is palindrome](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day15/Day15/ViewController%2BProblem1.swift)
+- [x] [Remove duplicates from a sorted linked list](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day15/Day15/ViewController%2BProblem2.swift)
