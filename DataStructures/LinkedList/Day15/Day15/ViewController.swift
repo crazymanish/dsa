@@ -29,5 +29,11 @@ class ViewController: UIViewController {
         checkPalindromeLinkedList(inputArray: inputArray)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [11, 11, 11, 21, 43, 43, 60]
+        deleteDuplicateFromSortedLinkedList(inputArray: inputArray)
+
+        inputArray = [11, 11, 11, 21, 43, 43, 43, 60]
+        deleteDuplicateFromSortedLinkedList(inputArray: inputArray)
+    }
 }
