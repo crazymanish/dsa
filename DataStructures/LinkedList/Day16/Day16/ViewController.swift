@@ -18,7 +18,13 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        var inputArray = [11, 21, 11, 21, 43, 11, 60]
+        removeDuplicateFromLinkedList(inputArray: inputArray)
+
+        inputArray = [12, 11, 12, 21, 41, 43, 21]
+        removeDuplicateFromLinkedList(inputArray: inputArray)
+    }
 
     private func solution2() {}
 }
