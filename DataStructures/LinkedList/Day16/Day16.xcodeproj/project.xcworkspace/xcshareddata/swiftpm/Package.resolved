@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "dsa-reusable",
+        "repositoryURL": "https://github.com/crazymanish/dsa-reusable",
+        "state": {
+          "branch": "main",
+          "revision": "3e5ec51fc070295cfee0057de74bcb9448a2d98e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
