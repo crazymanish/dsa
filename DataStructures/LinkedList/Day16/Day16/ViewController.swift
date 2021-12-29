@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         removeDuplicateFromLinkedList(inputArray: inputArray)
     }
 
-    private func solution2() {}
+    private func solution2() {
+        var inputArray = [1, 2, 3, 4, 5]
+        moveLastItemToFrontInLinkedList(inputArray: inputArray)
+    }
 }
 
