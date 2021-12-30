@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/016-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/017-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -87,3 +87,7 @@ Day15: 28-dec-2021
 Day16: 29-dec-2021
 - [x] [Remove duplicates from an unsorted linked list](https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day16/Day16/ViewController%2BProblem1.swift)
 - [x] [Move last element to front of a given Linked List](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/LinkedList/Day16/Day16/ViewController%2BProblem2.swift)
+
+Day17: 30-dec-2021
+- [x] [Circular Linked List | Traversal](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L59)
+- [x] [Circular Singly Linked List | Insertion](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L46)
