@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/017-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/018-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -91,3 +91,8 @@ Day16: 29-dec-2021
 Day17: 30-dec-2021
 - [x] [Circular Linked List | Traversal](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L59)
 - [x] [Circular Singly Linked List | Insertion](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L46)
+
+Day18: 31-dec-2021
+- [x] [Circular Linked List | Delete a node](https://www.geeksforgeeks.org/deletion-circular-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L81)
+- [x] [Circular Singly Linked List | Delete a node using data key](https://www.geeksforgeeks.org/deletion-circular-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L91)
+- [x] [Circular Singly Linked List | Delete a node using index](https://www.geeksforgeeks.org/deletion-circular-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L114)
