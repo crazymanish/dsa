@@ -4,12 +4,12 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/019-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/020-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
 - [x] LinkList
-- [ ] Stack
+- [x] Stack
 - [ ] Queue 
 - [ ] Hashing
 - [ ] Tree (Binary tree, Binary Search tree, Heap)
@@ -100,3 +100,7 @@ Day18: 31-dec-2021
 Day19: 01-jan-2022
 - [x] Circular Linked List | Search a node using data key - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L138)
 - [x] Circular Singly Linked List | Search a node using index - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/SinglyCircularLinkedList/SinglyCircularLinkedList.swift#L152)
+
+Day20: 02-jan-2022
+- [x] [Stack | using Array](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/Stack.swift)
+- [x] [Stack | using LinkedList](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Stack/StackLinkedList.swift)
