@@ -4,13 +4,13 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/021-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/022-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
 - [x] LinkList
 - [x] Stack
-- [ ] Queue 
+- [x] Queue 
 - [ ] Hashing
 - [ ] Tree (Binary tree, Binary Search tree, Heap)
 - [ ] Graph 
@@ -108,3 +108,7 @@ Day20: 02-jan-2022
 Day21: 03-jan-2022
 - [x] [Queue | using Array](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/Queue.swift)
 - [x] [Queue | using LinkedList](https://www.geeksforgeeks.org/queue-linked-list-implementation/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/Queue/QueueLinkedList.swift)
+
+Day22: 04-jan-2022
+- [x] [Prefix to Infix Conversion](https://www.geeksforgeeks.org/prefix-infix-conversion/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day22/Day22/ViewController%2BProblem1.swift)
+- [x] [Prefix to Postfix Conversion](https://www.geeksforgeeks.org/prefix-postfix-conversion/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day22/Day22/ViewController%2BProblem2.swift)
