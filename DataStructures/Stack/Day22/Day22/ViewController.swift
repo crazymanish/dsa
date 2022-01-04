@@ -18,7 +18,10 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        prefixToInfix(inputString: "*+AB-CD")
+        prefixToInfix(inputString: "*-A/BC-/AKL")
+    }
 
     private func solution2() {}
 }
