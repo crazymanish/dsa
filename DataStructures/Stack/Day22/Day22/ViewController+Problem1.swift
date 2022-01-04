@@ -45,7 +45,7 @@ extension ViewController {
     }
 }
 
-private extension String {
+extension String {
     var isOperator: Bool {
         switch (self) {
         case "+", "-", "/", "*": return true
