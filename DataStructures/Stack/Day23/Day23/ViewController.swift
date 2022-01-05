@@ -22,5 +22,8 @@ class ViewController: UIViewController {
         postfixToPrefix(inputString: "ABC/-AK/L-*")
     }
 
-    private func solution2() {}
+    private func solution2() {
+        postfixToInfix(inputString: "abc++")
+        postfixToInfix(inputString: "ab*c+")
+    }
 }
