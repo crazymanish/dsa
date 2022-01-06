@@ -22,5 +22,7 @@ class ViewController: UIViewController {
         validateBalancedBracketsExpression(inputString: "[(])")
     }
 
-    private func solution2() {}
+    private func solution2() {
+        evaluatePostfixExpression(inputString: "231*+9-")
+    }
 }
