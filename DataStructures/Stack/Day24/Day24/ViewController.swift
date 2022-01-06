@@ -17,7 +17,10 @@ class ViewController: UIViewController {
         solution2()
     }
 
-    private func solution1() {}
+    private func solution1() {
+        validateBalancedBracketsExpression(inputString: "[()]{}{[()()]()}")
+        validateBalancedBracketsExpression(inputString: "[(])")
+    }
 
     private func solution2() {}
 }
