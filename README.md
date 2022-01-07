@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/024-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/025-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -120,3 +120,7 @@ Day23: 05-jan-2022
 Day24: 06-jan-2022
 - [x] [Check for Balanced Brackets in an expression](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day24/Day24/ViewController%2BProblem1.swift)
 - [x] [Evaluation of Postfix Expression](https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day24/Day24/ViewController%2BProblem2.swift)
+
+Day25: 07-jan-2022
+- [x] [Find maximum depth of nested parenthesis in a string](https://www.geeksforgeeks.org/find-maximum-depth-nested-parenthesis-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day25/Day25/ViewController%2BProblem1.swift)
+- [x] [Reverse a string using stack](https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day25/Day25/ViewController%2BProblem2.swift)
