@@ -26,5 +26,7 @@ class ViewController: UIViewController {
         maxParenthesisDepth(inputString: "(b) ((c) ()")
     }
 
-    private func solution2() {}
+    private func solution2() {
+        reverse(inputString: "GeeksQuiz")
+    }
 }
