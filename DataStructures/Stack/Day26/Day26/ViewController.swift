@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         reverseWords(inputString: "Geeks for Geeks")
     }
 
-    private func solution2() {}
+    private func solution2() {
+        reverse(inputNumber: 365)
+        reverse(inputNumber: 6899)
+        reverse(inputNumber: 39997)
+    }
 }
 
