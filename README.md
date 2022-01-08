@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/025-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/026-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -124,3 +124,7 @@ Day24: 06-jan-2022
 Day25: 07-jan-2022
 - [x] [Find maximum depth of nested parenthesis in a string](https://www.geeksforgeeks.org/find-maximum-depth-nested-parenthesis-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day25/Day25/ViewController%2BProblem1.swift)
 - [x] [Reverse a string using stack](https://www.geeksforgeeks.org/stack-set-3-reverse-string-using-stack/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day25/Day25/ViewController%2BProblem2.swift)
+
+Day26: 08-jan-2022
+- [x] [Reverse individual words](https://www.geeksforgeeks.org/reverse-individual-words/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day26/Day26/ViewController%2BProblem1.swift)
+- [x] [Reverse a number using stack](https://www.geeksforgeeks.org/reverse-number-using-stack/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day26/Day26/ViewController%2BProblem2.swift)
