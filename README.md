@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/026-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/027-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -128,3 +128,7 @@ Day25: 07-jan-2022
 Day26: 08-jan-2022
 - [x] [Reverse individual words](https://www.geeksforgeeks.org/reverse-individual-words/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day26/Day26/ViewController%2BProblem1.swift)
 - [x] [Reverse a number using stack](https://www.geeksforgeeks.org/reverse-number-using-stack/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day26/Day26/ViewController%2BProblem2.swift)
+
+Day27: 09-jan-2022
+- [x] [Reversing a Queue](https://www.geeksforgeeks.org/reversing-a-queue/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day27/Day27/ViewController%2BProblem1.swift)
+- [x] [Reversing a queue using recursion](https://www.geeksforgeeks.org/reversing-queue-using-recursion/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Stack/Day27/Day27/ViewController%2BProblem2.swift)
