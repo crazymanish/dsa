@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/027-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/028-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -12,7 +12,7 @@ Data Structure Goals:
 - [x] Stack
 - [x] Queue 
 - [ ] Hashing
-- [ ] Tree (Binary tree, Binary Search tree, Heap)
+- [x] Tree (Binary tree, Binary Search tree, Heap)
 - [ ] Graph 
 
 Algorithms Goals:
@@ -132,3 +132,7 @@ Day26: 08-jan-2022
 Day27: 09-jan-2022
 - [x] [Reversing a Queue](https://www.geeksforgeeks.org/reversing-a-queue/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Queue/Day27/Day27/ViewController%2BProblem1.swift)
 - [x] [Reversing a queue using recursion](https://www.geeksforgeeks.org/reversing-queue-using-recursion/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Queue/Day27/Day27/ViewController%2BProblem2.swift)
+
+Day28: 10-jan-2022
+- [x] BinaryTree Insert - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L19)
+- [x] BinaryTree InorderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L11)
