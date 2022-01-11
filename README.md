@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/028-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/029-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -136,3 +136,7 @@ Day27: 09-jan-2022
 Day28: 10-jan-2022
 - [x] BinaryTree Insert - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L19)
 - [x] BinaryTree InorderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L11)
+
+Day29: 11-jan-2022
+- [x] BinaryTree height - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BHelper.swift#L11)
+- [x] [BinaryTree LevelOrderTraversal](https://www.geeksforgeeks.org/level-order-tree-traversal/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L31)
