@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/030-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/031-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -144,3 +144,7 @@ Day29: 11-jan-2022
 Day30: 12-jan-2022
 - [x] BinaryTree PreOrderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L36)
 - [x] BinaryTree PostOrderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L80)
+
+Day31: 13-jan-2022
+- [x] BinaryTree PreOrderIterativeTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L104)
+- [x] [Sum of all nodes in a binary tree](https://www.geeksforgeeks.org/sum-nodes-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day31/Day31/ViewController%2BProblem1.swift)
