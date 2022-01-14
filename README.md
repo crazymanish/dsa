@@ -134,17 +134,17 @@ Day27: 09-jan-2022
 - [x] [Reversing a queue using recursion](https://www.geeksforgeeks.org/reversing-queue-using-recursion/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Queue/Day27/Day27/ViewController%2BProblem2.swift)
 
 Day28: 10-jan-2022
-- [x] BinaryTree Insert - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L19)
-- [x] BinaryTree InorderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L58)
+- [x] [BinaryTree Insert](https://www.geeksforgeeks.org/insertion-in-a-binary-tree-in-level-order/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree.swift#L19)
+- [x] [BinaryTree InorderTraversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L58)
 
 Day29: 11-jan-2022
 - [x] BinaryTree height - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BHelper.swift#L11)
 - [x] [BinaryTree LevelOrderTraversal](https://www.geeksforgeeks.org/level-order-tree-traversal/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L11)
 
 Day30: 12-jan-2022
-- [x] BinaryTree PreOrderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L36)
-- [x] BinaryTree PostOrderTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L80)
+- [x] [BinaryTree PreOrderTraversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L36)
+- [x] [BinaryTree PostOrderTraversal](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L80)
 
 Day31: 13-jan-2022
-- [x] BinaryTree PreOrderIterativeTraversal - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L104)
+- [x] [BinaryTree PreOrderIterativeTraversal](https://www.geeksforgeeks.org/iterative-preorder-traversal/) - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/BinaryTree/BinaryTree%2BTraversal.swift#L104)
 - [x] [Sum of all nodes in a binary tree](https://www.geeksforgeeks.org/sum-nodes-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day31/Day31/ViewController%2BProblem1.swift)
