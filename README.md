@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/032-days-green.svg?style=flat)
+**Consistency tracker:** 14 dec 2021 - till today ![![consistency days]](https://img.shields.io/badge/033-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -150,5 +150,9 @@ Day31: 13-jan-2022
 - [x] [Sum of all nodes in a binary tree](https://www.geeksforgeeks.org/sum-nodes-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day31/Day31/ViewController%2BProblem1.swift)
 
 Day32: 14-jan-2022
-- [x] DoublyLinkedList Insert - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L43)
+- [x] DoublyLinkedList Insert - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L45)
 - [x] DoublyLinkedList Count - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L29)
+
+Day33: 15-jan-2022
+- [x] DoublyLinkedList isEmpty - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L13)
+- [x] DoublyLinkedList asArray - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L15)
