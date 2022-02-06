@@ -14,6 +14,7 @@
 		138CEC3527B0267300CDF545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138CEC3427B0267300CDF545 /* Assets.xcassets */; };
 		138CEC3827B0267300CDF545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138CEC3627B0267300CDF545 /* LaunchScreen.storyboard */; };
 		138CEC4027B0269700CDF545 /* Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138CEC3F27B0269700CDF545 /* Problem1.swift */; };
+		138CEC4227B0355800CDF545 /* Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138CEC4127B0355800CDF545 /* Problem2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		138CEC3727B0267300CDF545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138CEC3927B0267300CDF545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		138CEC3F27B0269700CDF545 /* Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem1.swift; sourceTree = "<group>"; };
+		138CEC4127B0355800CDF545 /* Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				138CEC2D27B0266F00CDF545 /* SceneDelegate.swift */,
 				138CEC2F27B0266F00CDF545 /* ViewController.swift */,
 				138CEC3F27B0269700CDF545 /* Problem1.swift */,
+				138CEC4127B0355800CDF545 /* Problem2.swift */,
 				138CEC3127B0266F00CDF545 /* Main.storyboard */,
 				138CEC3427B0267300CDF545 /* Assets.xcassets */,
 				138CEC3627B0267300CDF545 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				138CEC3027B0266F00CDF545 /* ViewController.swift in Sources */,
+				138CEC4227B0355800CDF545 /* Problem2.swift in Sources */,
 				138CEC2C27B0266F00CDF545 /* AppDelegate.swift in Sources */,
 				138CEC2E27B0266F00CDF545 /* SceneDelegate.swift in Sources */,
 				138CEC4027B0269700CDF545 /* Problem1.swift in Sources */,
