@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         problem1()
+        problem2()
     }
 
     private func problem1() {
@@ -27,6 +28,21 @@ class ViewController: UIViewController {
 
         inputArray = [13, 7, 6, 12]
         problem = Problem(inputArray: inputArray)
+        problem.solve()
+    }
+
+    private func problem2() {
+        print("Next Smaller Element to left")
+        print("--------------")
+
+        var inputArray = [1, 6, 4, 10, 2, 5]
+        var problem = Problem2(inputArray: inputArray)
+        problem.solve()
+
+        print("--------------")
+
+        inputArray = [1, 3, 0, 2, 5]
+        problem = Problem2(inputArray: inputArray)
         problem.solve()
     }
 }
