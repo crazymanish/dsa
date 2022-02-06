@@ -30,3 +30,78 @@ import Foundation
     6       -->     12
     12      -->     -1
  */
+
+ // MARK: - Stack
+class Stack<T> {
+  var array: [T] = []
+
+  var isEmpty: Bool {
+    return array.isEmpty
+  }
+
+  var count: Int {
+    return array.count
+  }
+
+  var peek: T? {
+    return array.last
+  }
+
+  func push(element: T) {
+    array.append(element)
+  }
+
+  func pop() {
+    array.removeLast()
+  }
+}
+
+// MARK: - Problem solution
+protocol Solvable {
+  func solve()
+}
+
+class Problem1 {
+   private let inputArray: [Int]
+
+   init(inputArray: [Int]) {
+     self.inputArray = inputArray
+   }
+ }
+
+ extension Problem1: Solvable {
+   func solve() {
+     print("Input array: \(inputArray)")
+
+     var outputArray: [Int] = []
+     let stack = Stack<Int>()
+
+     for item in inputArray.reversed() {
+       if var peekElement = stack.peek {
+         if peekElement > item {
+           outputArray.append(peekElement)
+         } else {
+           while peekElement < item {
+               stack.pop()
+
+               if stack.isEmpty { break }
+               peekElement = stack.peek!
+           }
+
+           if peekElement > item {
+             outputArray.append(peekElement)
+           } else {
+             outputArray.append(-1)
+           }
+         }
+       } else {
+         outputArray.append(-1)
+       }
+
+       stack.push(element: item)
+     }
+
+    outputArray = outputArray.reversed()
+    print("Output array: \(outputArray)")
+   }
+ }
