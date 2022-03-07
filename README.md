@@ -163,3 +163,4 @@ Day34: 16-jan-2022
 
 Day35: 07-March-2022
 - [x] [LeetCode-938: Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day35/Day35/ViewController%2BProblem1.swift)
+- [x] [LeetCode-617: Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day35/Day35/ViewController%2BProblem2.swift)
