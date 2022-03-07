@@ -25,3 +25,46 @@ import Foundation
  Output: 32
  Explanation: Nodes 7, 10, and 15 are in the range [7, 15]. 7 + 10 + 15 = 32.
  */
+
+public class TreeNode {
+    public var val: Int
+    public var left: TreeNode?
+    public var right: TreeNode?
+
+    public init() {
+        self.val = 0
+        self.left = nil
+        self.right = nil
+    }
+
+    public init(_ val: Int) {
+        self.val = val
+        self.left = nil
+        self.right = nil
+    }
+
+    public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
+        self.val = val
+        self.left = left
+        self.right = right
+    }
+}
+
+extension ViewController {
+    func solve() {
+        print("Setting up input!")
+        let root = TreeNode(10)
+        root.left = TreeNode(5)
+        root.right = TreeNode(15)
+        root.left?.left = TreeNode(3)
+        root.left?.right = TreeNode(7)
+        root.right?.right = TreeNode(18)
+
+        let outputSum = rangeSumBST(root, 7, 15)
+        print("Output sum: \(outputSum)")
+    }
+
+    func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
+        return 0
+    }
+}
