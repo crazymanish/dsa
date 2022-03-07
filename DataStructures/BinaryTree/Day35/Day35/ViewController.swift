@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 
         print("Problem 'Range Sum of BST' solution:\n\n")
         solve()
+
+        print("Problem 'Merge Two Binary Trees' solution:\n\n")
+        solve2()
     }
 }
 
