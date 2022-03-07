@@ -65,6 +65,40 @@ extension ViewController {
     }
 
     func rangeSumBST(_ root: TreeNode?, _ low: Int, _ high: Int) -> Int {
-        return 0
+        guard let rootNode = root else { return 0 }
+
+        var outputSum = 0
+
+        let queue = Queue()
+        queue.enQueue(rootNode)
+
+        while queue.isEmpty == false {
+            let currentNode = queue.deQueue()!
+
+            if currentNode.val >= low && currentNode.val <= high {
+                outputSum += currentNode.val
+            }
+
+            if currentNode.left != nil { queue.enQueue(currentNode.left!) }
+            if currentNode.right != nil { queue.enQueue(currentNode.right!) }
+        }
+
+        return outputSum
+    }
+}
+
+class Queue {
+    private var array: [TreeNode] = []
+
+    var isEmpty: Bool { return array.isEmpty }
+
+    func enQueue(_ treeNode: TreeNode) {
+        array.append(treeNode)
+    }
+
+    func deQueue() -> TreeNode? {
+        if isEmpty { return nil }
+
+        return array.removeFirst()
     }
 }
