@@ -10,10 +10,10 @@ Data Structure Goals:
 - [x] Array
 - [x] LinkList
 - [x] Stack
-- [x] Queue 
+- [x] Queue
 - [ ] Hashing
 - [x] Tree (Binary tree, Binary Search tree, Heap)
-- [ ] Graph 
+- [ ] Graph
 
 Algorithms Goals:
 - [ ] Searching and Sorting
@@ -160,3 +160,6 @@ Day33: 15-jan-2022
 Day34: 16-jan-2022
 - [x] DoublyLinkedList delete from start - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L57)
 - [x] DoublyLinkedList delete with data key - [**Solution**](https://github.com/crazymanish/dsa-reusable/blob/main/Sources/dsa-reusable/LinkedList/DoublyLinkedList/DoublyLinkedList.swift#L68)
+
+Day35: 07-March-2022
+- [x] [LeetCode-938: Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day35/Day35/ViewController%2BProblem1.swift)
