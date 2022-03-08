@@ -14,6 +14,7 @@
 		1357CC7A27D741F500A29264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1357CC7927D741F500A29264 /* Assets.xcassets */; };
 		1357CC7D27D741F500A29264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */; };
 		1357CC8527D7427500A29264 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357CC8427D7427500A29264 /* TreeNode.swift */; };
+		13A5F2DE27D7481D00515002 /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5F2DD27D7481D00515002 /* ViewController+Problem1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1357CC7C27D741F500A29264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1357CC7E27D741F500A29264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1357CC8427D7427500A29264 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		13A5F2DD27D7481D00515002 /* ViewController+Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem1.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1357CC7227D741F200A29264 /* SceneDelegate.swift */,
 				1357CC7427D741F200A29264 /* ViewController.swift */,
 				1357CC8427D7427500A29264 /* TreeNode.swift */,
+				13A5F2DD27D7481D00515002 /* ViewController+Problem1.swift */,
 				1357CC7627D741F200A29264 /* Main.storyboard */,
 				1357CC7927D741F500A29264 /* Assets.xcassets */,
 				1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				1357CC7527D741F200A29264 /* ViewController.swift in Sources */,
 				1357CC7127D741F200A29264 /* AppDelegate.swift in Sources */,
+				13A5F2DE27D7481D00515002 /* ViewController+Problem1.swift in Sources */,
 				1357CC7327D741F200A29264 /* SceneDelegate.swift in Sources */,
 				1357CC8527D7427500A29264 /* TreeNode.swift in Sources */,
 			);
