@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/035-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/036-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -164,3 +164,6 @@ Day34: 16-jan-2022
 Day35: 07-March-2022
 - [x] [LeetCode-938: Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day35/Day35/ViewController%2BProblem1.swift)
 - [x] [LeetCode-617: Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/Day35/Day35/ViewController%2BProblem2.swift)
+
+Day36: 08-March-2022
+- [x] [LeetCode-897: Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem1.swift)
