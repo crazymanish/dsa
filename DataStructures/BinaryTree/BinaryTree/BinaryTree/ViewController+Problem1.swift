@@ -37,7 +37,7 @@ extension ViewController {
         root.right = TreeNode(7)
 
         let output = increasingBST(root)
-        print("Output: \(output)")
+        print("Output: \(output as Any)")
     }
 
     func increasingBST(_ root: TreeNode?) -> TreeNode? {
