@@ -13,22 +13,6 @@ import Foundation
  Given the root of a binary search tree, rearrange the tree in in-order so that the leftmost node in the tree is now the root of the tree, and every node has no left child and only one right child.
  */
 
-class Queue {
-    private var array: [Int] = []
-
-    var isEmpty: Bool { return array.isEmpty }
-
-    func enQueue(_ value: Int) {
-        array.append(value)
-    }
-
-    func deQueue() -> Int? {
-        if isEmpty { return nil }
-
-        return array.removeFirst()
-    }
-}
-
 extension ViewController {
     func solve1() {
         print("Setting up Problem1 input!")
@@ -43,7 +27,7 @@ extension ViewController {
     func increasingBST(_ root: TreeNode?) -> TreeNode? {
         if root == nil { return nil }
 
-        let queue = Queue()
+        let queue = Queue<Int>()
         getAllBSTNodes(root, queue: queue)
 
         var outputNode: TreeNode? = TreeNode(-1)
@@ -58,7 +42,7 @@ extension ViewController {
         return outputRootNode?.right
     }
 
-    func getAllBSTNodes(_ root: TreeNode?, queue: Queue) {
+    func getAllBSTNodes(_ root: TreeNode?, queue: Queue<Int>) {
         if root == nil { return }
 
         getAllBSTNodes(root?.left, queue: queue)
