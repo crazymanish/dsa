@@ -21,11 +21,9 @@ import Foundation
  Explanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
  */
 
-
-
 extension ViewController {
     func solve3() {
-        print("Setting up Problem2 input!")
+        print("Setting up Problem3 input!")
         let root = TreeNode(1)
         root.left = TreeNode(0)
         root.right = TreeNode(1)

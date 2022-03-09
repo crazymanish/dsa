@@ -168,3 +168,6 @@ Day35: 07-March-2022
 Day36: 08-March-2022
 - [x] [LeetCode-897: Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem1.swift)
 - [x] [LeetCode-700: Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem2.swift)
+
+Day37: 09-March-2022
+- [x] [LeetCode-1022: Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem3.swift)
