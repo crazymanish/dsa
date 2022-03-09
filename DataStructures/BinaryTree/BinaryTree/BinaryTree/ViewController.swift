@@ -16,5 +16,6 @@ class ViewController: UIViewController {
         solve1()
         solve2()
         solve3()
+        solve4()
     }
 }
