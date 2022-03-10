@@ -175,3 +175,4 @@ Day37: 09-March-2022
 
 Day38: 10-March-2022
 - [x] [LeetCode-226: Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem5.swift)
+- [x] [LeetCode-94: Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem6.swift)
