@@ -15,6 +15,7 @@
 		1357CC7D27D741F500A29264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */; };
 		1357CC8527D7427500A29264 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357CC8427D7427500A29264 /* TreeNode.swift */; };
 		138928EC27D936E3003B5855 /* ViewController+Problem4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138928EB27D936E3003B5855 /* ViewController+Problem4.swift */; };
+		138928EE27D9EF1D003B5855 /* ViewController+Problem5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138928ED27D9EF1D003B5855 /* ViewController+Problem5.swift */; };
 		13A3675427D7DBE70098E2EA /* ViewController+Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3675327D7DBE70098E2EA /* ViewController+Problem2.swift */; };
 		13A3675627D86E120098E2EA /* ViewController+Problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3675527D86E120098E2EA /* ViewController+Problem3.swift */; };
 		13A3675827D8A38C0098E2EA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3675727D8A38C0098E2EA /* Queue.swift */; };
@@ -32,6 +33,7 @@
 		1357CC7E27D741F500A29264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1357CC8427D7427500A29264 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		138928EB27D936E3003B5855 /* ViewController+Problem4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem4.swift"; sourceTree = "<group>"; };
+		138928ED27D9EF1D003B5855 /* ViewController+Problem5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem5.swift"; sourceTree = "<group>"; };
 		13A3675327D7DBE70098E2EA /* ViewController+Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem2.swift"; sourceTree = "<group>"; };
 		13A3675527D86E120098E2EA /* ViewController+Problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem3.swift"; sourceTree = "<group>"; };
 		13A3675727D8A38C0098E2EA /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				13A3675327D7DBE70098E2EA /* ViewController+Problem2.swift */,
 				13A3675527D86E120098E2EA /* ViewController+Problem3.swift */,
 				138928EB27D936E3003B5855 /* ViewController+Problem4.swift */,
+				138928ED27D9EF1D003B5855 /* ViewController+Problem5.swift */,
 				1357CC7627D741F200A29264 /* Main.storyboard */,
 				1357CC7927D741F500A29264 /* Assets.xcassets */,
 				1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */,
@@ -164,6 +167,7 @@
 				13A5F2DE27D7481D00515002 /* ViewController+Problem1.swift in Sources */,
 				13A3675427D7DBE70098E2EA /* ViewController+Problem2.swift in Sources */,
 				1357CC7327D741F200A29264 /* SceneDelegate.swift in Sources */,
+				138928EE27D9EF1D003B5855 /* ViewController+Problem5.swift in Sources */,
 				1357CC8527D7427500A29264 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
