@@ -180,3 +180,6 @@ Day38: 10-March-2022
 Day39: 11-March-2022
 - [x] [LeetCode-965: Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem7.swift)
 - [x] [LeetCode-637: Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem8.swift)
+
+Day40: 12-March-2022
+- [x] [LeetCode-108: Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem9.swift)
