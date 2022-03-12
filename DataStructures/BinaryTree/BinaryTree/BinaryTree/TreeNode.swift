@@ -36,6 +36,10 @@ extension TreeNode {
         return inorderTraversal(self)
     }
 
+    var postorderTraversal: [Int] {
+        return postorderTraversal(self)
+    }
+
     func inorderTraversal(_ root: TreeNode?) -> [Int] {
         if root == nil { return [] }
 
@@ -43,5 +47,14 @@ extension TreeNode {
         let rightInorderTraversal = inorderTraversal(root?.right)
 
         return leftInorderTraversal + [root!.val] + rightInorderTraversal
+    }
+
+    func postorderTraversal(_ root: TreeNode?) -> [Int] {
+        guard let rootNode = root else { return [] }
+
+        let leftPostorderTraversal = postorderTraversal(rootNode.left)
+        let rightPostorderTraversal = postorderTraversal(rootNode.right)
+
+        return leftPostorderTraversal + rightPostorderTraversal + [rootNode.val]
     }
 }
