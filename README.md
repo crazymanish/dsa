@@ -191,3 +191,4 @@ Day40: 12-March-2022
 
 Day40: 13-March-2022
 - [x] [LeetCode-257: Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem15.swift)
+- [x] [LeetCode-606: Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem16.swift)
