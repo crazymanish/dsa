@@ -188,3 +188,6 @@ Day40: 12-March-2022
 - [x] [LeetCode-144: Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem12.swift)
 - [x] [LeetCode-653: Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem13.swift)
 - [x] [LeetCode-563: Binary Tree Tilt](https://leetcode.com/problems/binary-tree-tilt/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem14.swift)
+
+Day40: 13-March-2022
+- [x] [LeetCode-257: Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem15.swift)
