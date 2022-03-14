@@ -36,6 +36,7 @@
 		13C1CBFE27DF3B2F008AF400 /* ViewController+Problem19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CBFD27DF3B2F008AF400 /* ViewController+Problem19.swift */; };
 		13C1CC0027DF3ED7008AF400 /* ViewController+Problem20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CBFF27DF3ED7008AF400 /* ViewController+Problem20.swift */; };
 		13C1CC1227DFBBC7008AF400 /* ViewController+Problem21.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CC1127DFBBC7008AF400 /* ViewController+Problem21.swift */; };
+		13C1CC1427DFC56A008AF400 /* ViewController+Problem22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CC1327DFC56A008AF400 /* ViewController+Problem22.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		13C1CBFD27DF3B2F008AF400 /* ViewController+Problem19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem19.swift"; sourceTree = "<group>"; };
 		13C1CBFF27DF3ED7008AF400 /* ViewController+Problem20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem20.swift"; sourceTree = "<group>"; };
 		13C1CC1127DFBBC7008AF400 /* ViewController+Problem21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem21.swift"; sourceTree = "<group>"; };
+		13C1CC1327DFC56A008AF400 /* ViewController+Problem22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem22.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				13C1CBFD27DF3B2F008AF400 /* ViewController+Problem19.swift */,
 				13C1CBFF27DF3ED7008AF400 /* ViewController+Problem20.swift */,
 				13C1CC1127DFBBC7008AF400 /* ViewController+Problem21.swift */,
+				13C1CC1327DFC56A008AF400 /* ViewController+Problem22.swift */,
 				1357CC7627D741F200A29264 /* Main.storyboard */,
 				1357CC7927D741F500A29264 /* Assets.xcassets */,
 				1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 			files = (
 				13C1CBF827DE028D008AF400 /* ViewController+Problem16.swift in Sources */,
 				1357CC7527D741F200A29264 /* ViewController.swift in Sources */,
+				13C1CC1427DFC56A008AF400 /* ViewController+Problem22.swift in Sources */,
 				13A3675627D86E120098E2EA /* ViewController+Problem3.swift in Sources */,
 				13C1CC1227DFBBC7008AF400 /* ViewController+Problem21.swift in Sources */,
 				13C1CBEA27DC8ECF008AF400 /* ViewController+Problem9.swift in Sources */,
