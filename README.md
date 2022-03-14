@@ -197,3 +197,4 @@ Day41: 13-March-2022
 
 Day42: 14-March-2022
 - [x] [LeetCode-783: Minimum Distance Between BST Nodes](https://leetcode.com/problems/minimum-distance-between-bst-nodes/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem19.swift)
+- [x] [LeetCode-100: Same Tree](https://leetcode.com/problems/same-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem20.swift)
