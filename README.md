@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/042-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/043-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -200,3 +200,6 @@ Day42: 14-March-2022
 - [x] [LeetCode-100: Same Tree](https://leetcode.com/problems/same-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem20.swift)
 - [x] [LeetCode-404: Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem21.swift)
 - [x] [LeetCode-993: Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem22.swift)
+
+Day43: 15-March-2022
+- [x] [LeetCode-543: Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem23.swift)
