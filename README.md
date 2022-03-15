@@ -203,3 +203,4 @@ Day42: 14-March-2022
 
 Day43: 15-March-2022
 - [x] [LeetCode-543: Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem23.swift)
+- [x] [LeetCode-101: Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem24.swift)
