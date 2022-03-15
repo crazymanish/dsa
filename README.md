@@ -206,3 +206,4 @@ Day43: 15-March-2022
 - [x] [LeetCode-101: Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem24.swift)
 - [x] [LeetCode-501: Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem25.swift)
 - [x] [LeetCode-110: Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem26.swift)
+- [x] [LeetCode-112: Path Sum](https://leetcode.com/problems/path-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem27.swift)
