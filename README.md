@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/043-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/044-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -208,3 +208,6 @@ Day43: 15-March-2022
 - [x] [LeetCode-110: Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem26.swift)
 - [x] [LeetCode-112: Path Sum](https://leetcode.com/problems/path-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem27.swift)
 - [x] [LeetCode-572: Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem28.swift)
+
+Day44: 16-March-2022
+- [x] [LeetCode-671: Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem29.swift)
