@@ -1,0 +1,109 @@
+//
+//  ViewController+Problem41.swift
+//  BinaryTree
+//
+//  Created by Manish Rathi on 17/03/2022.
+//
+
+import Foundation
+/*
+ 987. Vertical Order Traversal of a Binary Tree
+ https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+ Given the root of a binary tree, calculate the vertical order traversal of the binary tree.
+ For each node at position (row, col), its left and right children will be at positions (row + 1, col - 1) and (row + 1, col + 1) respectively. The root of the tree is at (0, 0).
+ The vertical order traversal of a binary tree is a list of top-to-bottom orderings for each column index starting from the leftmost column and ending on the rightmost column. There may be multiple nodes in the same row and same column. In such a case, sort these nodes by their values.
+ Return the vertical order traversal of the binary tree.
+
+ Example 1:
+ Input: root = [3,9,20,null,null,15,7]
+ Output: [[9],[3,15],[20],[7]]
+ Explanation:
+ Column -1: Only node 9 is in this column.
+ Column 0: Nodes 3 and 15 are in this column in that order from top to bottom.
+ Column 1: Only node 20 is in this column.
+ Column 2: Only node 7 is in this column.
+
+ Example 2:
+ Input: root = [1,2,3,4,5,6,7]
+ Output: [[4],[2],[1,5,6],[3],[7]]
+ Explanation:
+ Column -2: Only node 4 is in this column.
+ Column -1: Only node 2 is in this column.
+ Column 0: Nodes 1, 5, and 6 are in this column.
+           1 is at the top, so it comes first.
+           5 and 6 are at the same position (2, 0), so we order them by their value, 5 before 6.
+ Column 1: Only node 3 is in this column.
+ Column 2: Only node 7 is in this column.
+
+ Example 3:
+ Input: root = [1,2,3,4,6,5,7]
+ Output: [[4],[2],[1,5,6],[3],[7]]
+ Explanation:
+ This case is the exact same as example 2, but with nodes 5 and 6 swapped.
+ Note that the solution remains the same since 5 and 6 are in the same location and should be ordered by their values.
+ */
+
+extension ViewController {
+    func solve41() {
+        print("Setting up Problem41 input!")
+        let root = TreeNode(1)
+        root.left = TreeNode(2)
+        root.right = TreeNode(3)
+        root.left?.left = TreeNode(4)
+        root.left?.right = TreeNode(5)
+        root.right?.left = TreeNode(6)
+        root.right?.right = TreeNode(7)
+
+        let output = Solution().verticalTraversal(root)
+        print("Output: \(output)")
+    }
+}
+
+fileprivate class Solution {
+    func verticalTraversal(_ root: TreeNode?) -> [[Int]] {
+        guard let root = root else { return [[]] }
+
+        var depthWithValuesMap: [Int: [Int]] = [:]
+        let queue = Queue<NodeInfo>()
+        queue.enQueue(NodeInfo(root, 0))
+
+        while queue.isEmpty == false {
+            let currentNodeInfo = queue.deQueue()!
+            let currentNode = currentNodeInfo.node
+            let currentDepth = currentNodeInfo.depth
+
+            if let currentDepthMap = depthWithValuesMap[currentDepth] {
+                depthWithValuesMap[currentDepth] = currentDepthMap + [currentNode.val]
+            } else {
+                depthWithValuesMap[currentDepth] = [currentNode.val]
+            }
+
+            if let leftNode = currentNode.left {
+                queue.enQueue(NodeInfo(leftNode, currentDepth-1))
+            }
+
+            if let rightNode = currentNode.right {
+                queue.enQueue(NodeInfo(rightNode, currentDepth+1))
+            }
+        }
+
+        var outputArray: [[Int]] = []
+        let sortedData = depthWithValuesMap.sorted(by: { $0.key < $1.key })
+
+        for (_, value) in sortedData {
+            outputArray.append(value)
+        }
+
+        return outputArray
+    }
+}
+
+class NodeInfo {
+    let node: TreeNode
+    let depth: Int
+
+    init(_ node: TreeNode, _ depth: Int) {
+        self.node = node
+        self.depth = depth
+    }
+}

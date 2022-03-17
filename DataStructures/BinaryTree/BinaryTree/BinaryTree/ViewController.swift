@@ -53,5 +53,6 @@ class ViewController: UIViewController {
         solve38()
         solve39()
         solve40()
+        solve41()
     }
 }
