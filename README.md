@@ -220,3 +220,4 @@ Day44: 16-March-2022
 Day45: 17-March-2022
 - [x] [LeetCode-701: Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem35.swift)
 - [x] [LeetCode-1305: All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem36.swift)
+- [x] [LeetCode-1325: Delete Leaves With a Given Value](https://leetcode.com/problems/delete-leaves-with-a-given-value/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem37.swift)
