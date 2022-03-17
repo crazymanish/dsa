@@ -4,7 +4,7 @@ Data Structure &amp; Algorithms (Swift language)
 ![![License]](https://img.shields.io/badge/license-MIT-green.svg?style=flat)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/contact-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/044-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/045-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -216,3 +216,6 @@ Day44: 16-March-2022
 - [x] [LeetCode-1315: Sum of Nodes with Even-Valued Grandparent](https://leetcode.com/problems/sum-of-nodes-with-even-valued-grandparent/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem32.swift)
 - [x] [LeetCode-1038: Binary Search Tree to Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem33.swift)
 - [x] [LeetCode-654: Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem34.swift)
+
+Day45: 17-March-2022
+- [x] [LeetCode-701: Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem35.swift)
