@@ -64,6 +64,8 @@
 		13C1CCBC27E52C26008AF400 /* ViewController+Problem47.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCBB27E52C26008AF400 /* ViewController+Problem47.swift */; };
 		13C1CCBE27E52F1A008AF400 /* ViewController+Problem48.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCBD27E52F1A008AF400 /* ViewController+Problem48.swift */; };
 		13C1CCC027E5344C008AF400 /* ViewController+Problem49.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCBF27E5344C008AF400 /* ViewController+Problem49.swift */; };
+		13C1CCC227E53778008AF400 /* ViewController+Problem50.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCC127E53778008AF400 /* ViewController+Problem50.swift */; };
+		13C1CCC427E537CD008AF400 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCC327E537CD008AF400 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +128,8 @@
 		13C1CCBB27E52C26008AF400 /* ViewController+Problem47.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem47.swift"; sourceTree = "<group>"; };
 		13C1CCBD27E52F1A008AF400 /* ViewController+Problem48.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem48.swift"; sourceTree = "<group>"; };
 		13C1CCBF27E5344C008AF400 /* ViewController+Problem49.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem49.swift"; sourceTree = "<group>"; };
+		13C1CCC127E53778008AF400 /* ViewController+Problem50.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem50.swift"; sourceTree = "<group>"; };
+		13C1CCC327E537CD008AF400 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 				1357CC7427D741F200A29264 /* ViewController.swift */,
 				1357CC8427D7427500A29264 /* TreeNode.swift */,
 				13A3675727D8A38C0098E2EA /* Queue.swift */,
+				13C1CCC327E537CD008AF400 /* Stack.swift */,
 				13A5F2DD27D7481D00515002 /* ViewController+Problem1.swift */,
 				13A3675327D7DBE70098E2EA /* ViewController+Problem2.swift */,
 				13A3675527D86E120098E2EA /* ViewController+Problem3.swift */,
@@ -212,6 +217,7 @@
 				13C1CCBB27E52C26008AF400 /* ViewController+Problem47.swift */,
 				13C1CCBD27E52F1A008AF400 /* ViewController+Problem48.swift */,
 				13C1CCBF27E5344C008AF400 /* ViewController+Problem49.swift */,
+				13C1CCC127E53778008AF400 /* ViewController+Problem50.swift */,
 				1357CC7627D741F200A29264 /* Main.storyboard */,
 				1357CC7927D741F500A29264 /* Assets.xcassets */,
 				1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */,
@@ -311,6 +317,7 @@
 				13C1CCC027E5344C008AF400 /* ViewController+Problem49.swift in Sources */,
 				1389293A27DB4472003B5855 /* ViewController+Problem7.swift in Sources */,
 				13C1CC8C27E3A46B008AF400 /* ViewController+Problem40.swift in Sources */,
+				13C1CCC227E53778008AF400 /* ViewController+Problem50.swift in Sources */,
 				13C1CBF227DD1C53008AF400 /* ViewController+Problem13.swift in Sources */,
 				1357CC7127D741F200A29264 /* AppDelegate.swift in Sources */,
 				13C1CCB627E5193F008AF400 /* ViewController+Problem44.swift in Sources */,
@@ -334,6 +341,7 @@
 				13C1CC7627E34FA2008AF400 /* ViewController+Problem37.swift in Sources */,
 				1357CC7327D741F200A29264 /* SceneDelegate.swift in Sources */,
 				13C1CBFA27DE1059008AF400 /* ViewController+Problem17.swift in Sources */,
+				13C1CCC427E537CD008AF400 /* Stack.swift in Sources */,
 				138928EE27D9EF1D003B5855 /* ViewController+Problem5.swift in Sources */,
 				13C1CBF027DD1003008AF400 /* ViewController+Problem12.swift in Sources */,
 				13C1CC8A27E39971008AF400 /* ViewController+Problem39.swift in Sources */,
