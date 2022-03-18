@@ -50,8 +50,8 @@ extension ViewController {
         root.left = TreeNode(2)
         root.right = TreeNode(3)
         root.left?.left = TreeNode(4)
-        root.left?.right = TreeNode(5)
-        root.right?.left = TreeNode(6)
+        root.left?.right = TreeNode(6)
+        root.right?.left = TreeNode(5)
         root.right?.right = TreeNode(7)
 
         let output = Solution().verticalTraversal(root)
@@ -63,35 +63,42 @@ fileprivate class Solution {
     func verticalTraversal(_ root: TreeNode?) -> [[Int]] {
         guard let root = root else { return [[]] }
 
-        var depthWithValuesMap: [Int: [Int]] = [:]
+        var depthWithValuesMap: [Int: [NodeInfo]] = [:]
         let queue = Queue<NodeInfo>()
-        queue.enQueue(NodeInfo(root, 0))
+        queue.enQueue(NodeInfo(root, 0, 0))
 
         while queue.isEmpty == false {
             let currentNodeInfo = queue.deQueue()!
             let currentNode = currentNodeInfo.node
-            let currentDepth = currentNodeInfo.depth
+            let currentRow = currentNodeInfo.row
+            let currentColumn = currentNodeInfo.column
 
-            if let currentDepthMap = depthWithValuesMap[currentDepth] {
-                depthWithValuesMap[currentDepth] = currentDepthMap + [currentNode.val]
+            if let currentDepthMap = depthWithValuesMap[currentColumn] {
+                depthWithValuesMap[currentColumn] = currentDepthMap + [currentNodeInfo]
             } else {
-                depthWithValuesMap[currentDepth] = [currentNode.val]
+                depthWithValuesMap[currentColumn] = [currentNodeInfo]
             }
 
             if let leftNode = currentNode.left {
-                queue.enQueue(NodeInfo(leftNode, currentDepth-1))
+                queue.enQueue(NodeInfo(leftNode, currentRow+1, currentColumn-1))
             }
 
             if let rightNode = currentNode.right {
-                queue.enQueue(NodeInfo(rightNode, currentDepth+1))
+                queue.enQueue(NodeInfo(rightNode, currentRow+1, currentColumn+1))
             }
         }
 
         var outputArray: [[Int]] = []
-        let sortedData = depthWithValuesMap.sorted(by: { $0.key < $1.key })
+        let sortedMap = depthWithValuesMap.sorted(by: { $0.key < $1.key })
 
-        for (_, value) in sortedData {
-            outputArray.append(value)
+        for (_, value) in sortedMap {
+            let sortedValues = value.sorted {
+                if $0.row == $1.row { return $0.node.val < $1.node.val }
+                return $0.column < $1.column
+            }
+
+            let intValues = sortedValues.map { $0.node.val }
+            outputArray.append(intValues)
         }
 
         return outputArray
@@ -100,10 +107,12 @@ fileprivate class Solution {
 
 class NodeInfo {
     let node: TreeNode
-    let depth: Int
+    let row: Int
+    let column: Int
 
-    init(_ node: TreeNode, _ depth: Int) {
+    init(_ node: TreeNode, _ row: Int, _ column: Int) {
         self.node = node
-        self.depth = depth
+        self.row = row
+        self.column = column
     }
 }
