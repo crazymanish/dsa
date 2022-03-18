@@ -105,7 +105,7 @@ fileprivate class Solution {
     }
 }
 
-class NodeInfo {
+private class NodeInfo {
     let node: TreeNode
     let row: Int
     let column: Int
