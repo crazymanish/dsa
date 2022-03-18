@@ -228,3 +228,4 @@ Day45: 17-March-2022
 Day46: 18-March-2022
 - [x] [LeetCode-987: Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem41.swift)
 - [x] [LeetCode-662: Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem42.swift)
+- [x] [LeetCode-894: All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem43.swift)
