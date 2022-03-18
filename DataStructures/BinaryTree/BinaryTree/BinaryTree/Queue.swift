@@ -12,6 +12,10 @@ class Queue<T> {
 
     var isEmpty: Bool { return array.isEmpty }
 
+    var count: Int { return array.count }
+
+    var front: T? { array.first }
+
     func enQueue(_ value: T) {
         array.append(value)
     }
