@@ -243,3 +243,4 @@ Day46: 18-March-2022
 
 Day47: 19-March-2022
 - [x] [LeetCode-236: Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem55.swift)
+- [x] [LeetCode-98: Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/BinaryTree/BinaryTree/BinaryTree/ViewController%2BProblem56.swift)
