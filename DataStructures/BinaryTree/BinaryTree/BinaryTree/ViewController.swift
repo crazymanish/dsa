@@ -70,5 +70,6 @@ class ViewController: UIViewController {
         solve55()
         solve56()
         solve57()
+        solve58()
     }
 }

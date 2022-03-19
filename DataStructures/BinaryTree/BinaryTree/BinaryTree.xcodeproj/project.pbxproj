@@ -73,6 +73,7 @@
 		13C1CCCE27E5BE8E008AF400 /* ViewController+Problem55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCCD27E5BE8E008AF400 /* ViewController+Problem55.swift */; };
 		13C1CCD027E5F19F008AF400 /* ViewController+Problem56.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCCF27E5F19F008AF400 /* ViewController+Problem56.swift */; };
 		13C1CCD227E61A1C008AF400 /* ViewController+Problem57.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCD127E61A1C008AF400 /* ViewController+Problem57.swift */; };
+		13C1CCD427E61FE5008AF400 /* ViewController+Problem58.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCD327E61FE5008AF400 /* ViewController+Problem58.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		13C1CCCD27E5BE8E008AF400 /* ViewController+Problem55.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem55.swift"; sourceTree = "<group>"; };
 		13C1CCCF27E5F19F008AF400 /* ViewController+Problem56.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem56.swift"; sourceTree = "<group>"; };
 		13C1CCD127E61A1C008AF400 /* ViewController+Problem57.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem57.swift"; sourceTree = "<group>"; };
+		13C1CCD327E61FE5008AF400 /* ViewController+Problem58.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem58.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 				13C1CCCD27E5BE8E008AF400 /* ViewController+Problem55.swift */,
 				13C1CCCF27E5F19F008AF400 /* ViewController+Problem56.swift */,
 				13C1CCD127E61A1C008AF400 /* ViewController+Problem57.swift */,
+				13C1CCD327E61FE5008AF400 /* ViewController+Problem58.swift */,
 				1357CC7627D741F200A29264 /* Main.storyboard */,
 				1357CC7927D741F500A29264 /* Assets.xcassets */,
 				1357CC7B27D741F500A29264 /* LaunchScreen.storyboard */,
@@ -351,6 +354,7 @@
 				13C1CBF427DD30AC008AF400 /* ViewController+Problem14.swift in Sources */,
 				13C1CC7427E32D7C008AF400 /* ViewController+Problem36.swift in Sources */,
 				13A3675827D8A38C0098E2EA /* Queue.swift in Sources */,
+				13C1CCD427E61FE5008AF400 /* ViewController+Problem58.swift in Sources */,
 				13C1CC7227E32B8C008AF400 /* ViewController+Problem35.swift in Sources */,
 				13C1CBEE27DD0C2E008AF400 /* ViewController+Problem11.swift in Sources */,
 				13C1CBEC27DC9A4F008AF400 /* ViewController+Problem10.swift in Sources */,
