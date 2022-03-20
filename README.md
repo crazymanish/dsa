@@ -260,3 +260,4 @@ Day47:
 Day48:
 - [x] [LeetCode-1876: Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/SlidingWindow/SlidingWindow/ViewController%2BProblem1.swift)
 - [x] [LeetCode-1763: Longest Nice Substring](https://leetcode.com/problems/longest-nice-substring/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/SlidingWindow/SlidingWindow/ViewController%2BProblem2.swift)
+- [x] [LeetCode-1984: Minimum Difference Between Highest and Lowest of K Scores](https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/SlidingWindow/SlidingWindow/ViewController%2BProblem3.swift)
