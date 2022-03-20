@@ -31,16 +31,68 @@ extension ViewController {
     func solve1() {
         print("Setting up Problem1 input!")
 
-        let input = "xyzzaz"
-        print("Input: \(input)")
+        var input = "xyzzaz"
+        print("Input1: \(input)")
+        var output = Solution().countGoodSubstrings(input)
+        print("Output1: \(output)")
 
-        let output = Solution().countGoodSubstrings(input)
-        print("Output: \(output)")
+        input = "aababcabc"
+        print("Input2: \(input)")
+        output = Solution().countGoodSubstrings(input)
+        print("Output2: \(output)")
     }
 }
 
 fileprivate class Solution {
+    private var hashMap: [String : Int] = [:]
+    private var hashMapCounter = 0
+
     func countGoodSubstrings(_ s: String) -> Int {
-        return 0
+        let slidingWindow = SlidingWindow(s)
+        let windowSize = 3
+        var goodStringsCount = 0
+
+        while slidingWindow.endIndex < s.count {
+            // Do cache endIndex value in HashMap
+            let endValue = String(slidingWindow.endIndexValue)
+            addIntoHashMap(endValue)
+
+            let currentWindowValue = slidingWindow.value
+
+            if currentWindowValue.count == windowSize {
+                // Found the Good string!
+                if hashMapCounter == windowSize { goodStringsCount += 1 }
+
+                // Update startIndex cache value in HashMap
+                let startValue = String(slidingWindow.startIndexValue)
+                removeFromHashMap(startValue)
+
+                // Move sliding window by 1
+                slidingWindow.startIndex += 1
+            }
+
+            slidingWindow.endIndex += 1
+        }
+
+        return goodStringsCount
+    }
+
+    private func addIntoHashMap(_ value: String) {
+        if let cacheValue = hashMap[value] {
+            hashMap[value] = cacheValue + 1
+        } else {
+            hashMap[value] = 1
+            hashMapCounter += 1
+        }
+    }
+
+    private func removeFromHashMap(_ value: String) {
+        if let cacheValue = hashMap[value] {
+            hashMap[value] = cacheValue - 1
+            if hashMap[value]! == 0 {
+                hashMap.removeValue(forKey: value)
+                hashMapCounter -= 1
+            }
+        }
     }
 }
