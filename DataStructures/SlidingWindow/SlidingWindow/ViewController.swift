@@ -13,5 +13,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         solve1()
+        solve2()
     }
 }
