@@ -14,6 +14,7 @@ class SlidingWindow<T: Collection> {
     var endIndex: Int
 
     var value: T.SubSequence { value(at: startIndex, endIndex: endIndex) }
+    var size: Int { endIndex - startIndex + 1 }
     var startIndexValue: T.SubSequence { value(at: startIndex) }
     var endIndexValue: T.SubSequence { value(at: endIndex) }
 
