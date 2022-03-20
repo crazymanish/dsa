@@ -23,6 +23,7 @@
 		13C1CD0A27E73831008AF400 /* ViewController+Problem6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD0927E73831008AF400 /* ViewController+Problem6.swift */; };
 		13C1CD0C27E7447E008AF400 /* ViewController+Problem7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD0B27E7447E008AF400 /* ViewController+Problem7.swift */; };
 		13C1CD0E27E75790008AF400 /* ViewController+Problem8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD0D27E75790008AF400 /* ViewController+Problem8.swift */; };
+		13C1CD1027E77F66008AF400 /* ViewController+Problem9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD0F27E77F66008AF400 /* ViewController+Problem9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		13C1CD0927E73831008AF400 /* ViewController+Problem6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem6.swift"; sourceTree = "<group>"; };
 		13C1CD0B27E7447E008AF400 /* ViewController+Problem7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem7.swift"; sourceTree = "<group>"; };
 		13C1CD0D27E75790008AF400 /* ViewController+Problem8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem8.swift"; sourceTree = "<group>"; };
+		13C1CD0F27E77F66008AF400 /* ViewController+Problem9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem9.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				13C1CD0927E73831008AF400 /* ViewController+Problem6.swift */,
 				13C1CD0B27E7447E008AF400 /* ViewController+Problem7.swift */,
 				13C1CD0D27E75790008AF400 /* ViewController+Problem8.swift */,
+				13C1CD0F27E77F66008AF400 /* ViewController+Problem9.swift */,
 				13C1CCEB27E690F4008AF400 /* Main.storyboard */,
 				13C1CCEE27E690F7008AF400 /* Assets.xcassets */,
 				13C1CCF027E690F7008AF400 /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 			files = (
 				13C1CCFE27E6A814008AF400 /* SlidingWindow.swift in Sources */,
 				13C1CD0227E6C3EA008AF400 /* ViewController+Problem3.swift in Sources */,
+				13C1CD1027E77F66008AF400 /* ViewController+Problem9.swift in Sources */,
 				13C1CD0C27E7447E008AF400 /* ViewController+Problem7.swift in Sources */,
 				13C1CCFA27E69146008AF400 /* ViewController+Problem1.swift in Sources */,
 				13C1CD0427E6C64F008AF400 /* Queue.swift in Sources */,
