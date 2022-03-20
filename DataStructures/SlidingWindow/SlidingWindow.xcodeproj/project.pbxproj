@@ -15,6 +15,7 @@
 		13C1CCF227E690F7008AF400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C1CCF027E690F7008AF400 /* LaunchScreen.storyboard */; };
 		13C1CCFA27E69146008AF400 /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCF927E69146008AF400 /* ViewController+Problem1.swift */; };
 		13C1CCFE27E6A814008AF400 /* SlidingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCFD27E6A814008AF400 /* SlidingWindow.swift */; };
+		13C1CD0027E6B757008AF400 /* ViewController+Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CCFF27E6B757008AF400 /* ViewController+Problem2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		13C1CCF327E690F7008AF400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C1CCF927E69146008AF400 /* ViewController+Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem1.swift"; sourceTree = "<group>"; };
 		13C1CCFD27E6A814008AF400 /* SlidingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingWindow.swift; sourceTree = "<group>"; };
+		13C1CCFF27E6B757008AF400 /* ViewController+Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				13C1CCE927E690F4008AF400 /* ViewController.swift */,
 				13C1CCFD27E6A814008AF400 /* SlidingWindow.swift */,
 				13C1CCF927E69146008AF400 /* ViewController+Problem1.swift */,
+				13C1CCFF27E6B757008AF400 /* ViewController+Problem2.swift */,
 				13C1CCEB27E690F4008AF400 /* Main.storyboard */,
 				13C1CCEE27E690F7008AF400 /* Assets.xcassets */,
 				13C1CCF027E690F7008AF400 /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				13C1CCFE27E6A814008AF400 /* SlidingWindow.swift in Sources */,
 				13C1CCFA27E69146008AF400 /* ViewController+Problem1.swift in Sources */,
 				13C1CCEA27E690F4008AF400 /* ViewController.swift in Sources */,
+				13C1CD0027E6B757008AF400 /* ViewController+Problem2.swift in Sources */,
 				13C1CCE627E690F4008AF400 /* AppDelegate.swift in Sources */,
 				13C1CCE827E690F4008AF400 /* SceneDelegate.swift in Sources */,
 			);
