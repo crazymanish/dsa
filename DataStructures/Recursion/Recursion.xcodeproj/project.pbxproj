@@ -14,6 +14,7 @@
 		13C1CD2D27E86BDE008AF400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C1CD2C27E86BDE008AF400 /* Assets.xcassets */; };
 		13C1CD3027E86BDE008AF400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13C1CD2E27E86BDE008AF400 /* LaunchScreen.storyboard */; };
 		13C1CD3827E86BF3008AF400 /* ViewController+Problem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD3727E86BF3008AF400 /* ViewController+Problem1.swift */; };
+		13C1CD3A27E876E2008AF400 /* ViewController+Problem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD3927E876E2008AF400 /* ViewController+Problem2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		13C1CD2F27E86BDE008AF400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13C1CD3127E86BDE008AF400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13C1CD3727E86BF3008AF400 /* ViewController+Problem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem1.swift"; sourceTree = "<group>"; };
+		13C1CD3927E876E2008AF400 /* ViewController+Problem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				13C1CD2527E86BDA008AF400 /* SceneDelegate.swift */,
 				13C1CD2727E86BDA008AF400 /* ViewController.swift */,
 				13C1CD3727E86BF3008AF400 /* ViewController+Problem1.swift */,
+				13C1CD3927E876E2008AF400 /* ViewController+Problem2.swift */,
 				13C1CD2927E86BDA008AF400 /* Main.storyboard */,
 				13C1CD2C27E86BDE008AF400 /* Assets.xcassets */,
 				13C1CD2E27E86BDE008AF400 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				13C1CD3827E86BF3008AF400 /* ViewController+Problem1.swift in Sources */,
 				13C1CD2827E86BDA008AF400 /* ViewController.swift in Sources */,
 				13C1CD2427E86BDA008AF400 /* AppDelegate.swift in Sources */,
+				13C1CD3A27E876E2008AF400 /* ViewController+Problem2.swift in Sources */,
 				13C1CD2627E86BDA008AF400 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
