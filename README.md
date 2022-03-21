@@ -277,3 +277,4 @@ Day48:
 Day49:
 - [x] [LeetCode-344: Reverse String](https://leetcode.com/problems/reverse-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem1.swift)
 - [x] [LeetCode-206: Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem2.swift)
+- [x] [LeetCode-509: Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem3.swift)
