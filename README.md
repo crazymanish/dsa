@@ -279,3 +279,6 @@ Day49:
 - [x] [LeetCode-206: Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem2.swift)
 - [x] [LeetCode-509: Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem3.swift)
 - [x] [LeetCode-21: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem4.swift)
+
+Day50:
+- [x] [LeetCode-234: Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem5.swift)
