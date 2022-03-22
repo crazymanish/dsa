@@ -285,3 +285,4 @@ Day50:
 - [x] [LeetCode-231: Power of Two](https://leetcode.com/problems/power-of-two/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem6.swift)
 - [x] [LeetCode-342: Power of Four](https://leetcode.com/problems/power-of-four/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem7.swift)
 - [x] [LeetCode-326: Power of Three](https://leetcode.com/problems/power-of-four/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem8.swift)
+- [x] [LeetCode-203: Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem9.swift)
