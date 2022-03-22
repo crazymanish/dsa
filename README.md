@@ -284,3 +284,4 @@ Day50:
 - [x] [LeetCode-234: Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem5.swift)
 - [x] [LeetCode-231: Power of Two](https://leetcode.com/problems/power-of-two/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem6.swift)
 - [x] [LeetCode-342: Power of Four](https://leetcode.com/problems/power-of-four/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem7.swift)
+- [x] [LeetCode-326: Power of Three](https://leetcode.com/problems/power-of-four/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem8.swift)
