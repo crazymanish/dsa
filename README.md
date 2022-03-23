@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/050-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/051-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -287,3 +287,6 @@ Day50:
 - [x] [LeetCode-326: Power of Three](https://leetcode.com/problems/power-of-four/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem8.swift)
 - [x] [LeetCode-203: Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem9.swift)
 - [x] [LeetCode-2: Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem10.swift)
+
+Day51:
+- [x] [LeetCode-24: Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem11.swift)
