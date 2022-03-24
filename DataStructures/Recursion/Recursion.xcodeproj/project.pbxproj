@@ -16,6 +16,7 @@
 		1361255227EBA1760081672D /* ViewController+Problem11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361255127EBA1760081672D /* ViewController+Problem11.swift */; };
 		1361255427EBA3D20081672D /* ViewController+Problem12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361255327EBA3D20081672D /* ViewController+Problem12.swift */; };
 		1361256627ED15D60081672D /* ViewController+Problem13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361256527ED15D60081672D /* ViewController+Problem13.swift */; };
+		1361256827ED2F190081672D /* ViewController+Problem14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361256727ED2F190081672D /* ViewController+Problem14.swift */; };
 		13C1CD2427E86BDA008AF400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD2327E86BDA008AF400 /* AppDelegate.swift */; };
 		13C1CD2627E86BDA008AF400 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD2527E86BDA008AF400 /* SceneDelegate.swift */; };
 		13C1CD2827E86BDA008AF400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C1CD2727E86BDA008AF400 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		1361255127EBA1760081672D /* ViewController+Problem11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem11.swift"; sourceTree = "<group>"; };
 		1361255327EBA3D20081672D /* ViewController+Problem12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem12.swift"; sourceTree = "<group>"; };
 		1361256527ED15D60081672D /* ViewController+Problem13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem13.swift"; sourceTree = "<group>"; };
+		1361256727ED2F190081672D /* ViewController+Problem14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Problem14.swift"; sourceTree = "<group>"; };
 		13C1CD2027E86BDA008AF400 /* Recursion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recursion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C1CD2327E86BDA008AF400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13C1CD2527E86BDA008AF400 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				1361255127EBA1760081672D /* ViewController+Problem11.swift */,
 				1361255327EBA3D20081672D /* ViewController+Problem12.swift */,
 				1361256527ED15D60081672D /* ViewController+Problem13.swift */,
+				1361256727ED2F190081672D /* ViewController+Problem14.swift */,
 				13C1CD2927E86BDA008AF400 /* Main.storyboard */,
 				13C1CD2C27E86BDE008AF400 /* Assets.xcassets */,
 				13C1CD2E27E86BDE008AF400 /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 			files = (
 				1361255227EBA1760081672D /* ViewController+Problem11.swift in Sources */,
 				1361252E27EA5E630081672D /* ViewController+Problem9.swift in Sources */,
+				1361256827ED2F190081672D /* ViewController+Problem14.swift in Sources */,
 				1361252827EA4E920081672D /* ViewController+Problem6.swift in Sources */,
 				1361252627EA41DB0081672D /* ViewController+Problem5.swift in Sources */,
 				13C1CD3827E86BF3008AF400 /* ViewController+Problem1.swift in Sources */,
