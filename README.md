@@ -294,3 +294,4 @@ Day51:
 
 Day52:
 - [x] [LeetCode-394: Decode String](https://leetcode.com/problems/decode-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem13.swift)
+- [x] [LeetCode-1: Two Sum](https://leetcode.com/problems/two-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem14.swift)
