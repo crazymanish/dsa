@@ -296,5 +296,8 @@ Day52:
 - [x] [LeetCode-394: Decode String](https://leetcode.com/problems/decode-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem13.swift)
 - [x] [LeetCode-1: Two Sum](https://leetcode.com/problems/two-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem14.swift)
 
+## [Hash Table](https://leetcode.com/tag/hash-table/)
+
 Day53:
-- [x] [LeetCode-1512: Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem15.swift)
+- [x] [LeetCode-1512: Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BChallenge2.swift)
+- [x] [LeetCode-771: Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BChallenge2.swift)
