@@ -14,6 +14,7 @@
 		1361258F27EE5DCC0081672D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1361258E27EE5DCC0081672D /* Assets.xcassets */; };
 		1361259227EE5DCC0081672D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1361259027EE5DCC0081672D /* LaunchScreen.storyboard */; };
 		1361259A27EE5E040081672D /* ViewController+Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361259927EE5E040081672D /* ViewController+Challenge1.swift */; };
+		1361259C27EE64FF0081672D /* ViewController+Challenge2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361259B27EE64FF0081672D /* ViewController+Challenge2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1361259127EE5DCC0081672D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1361259327EE5DCC0081672D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1361259927EE5E040081672D /* ViewController+Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge1.swift"; sourceTree = "<group>"; };
+		1361259B27EE64FF0081672D /* ViewController+Challenge2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1361258727EE5DC80081672D /* SceneDelegate.swift */,
 				1361258927EE5DC80081672D /* ViewController.swift */,
 				1361259927EE5E040081672D /* ViewController+Challenge1.swift */,
+				1361259B27EE64FF0081672D /* ViewController+Challenge2.swift */,
 				1361258B27EE5DC80081672D /* Main.storyboard */,
 				1361258E27EE5DCC0081672D /* Assets.xcassets */,
 				1361259027EE5DCC0081672D /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				1361258A27EE5DC80081672D /* ViewController.swift in Sources */,
 				1361258627EE5DC80081672D /* AppDelegate.swift in Sources */,
 				1361258827EE5DC80081672D /* SceneDelegate.swift in Sources */,
+				1361259C27EE64FF0081672D /* ViewController+Challenge2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
