@@ -299,5 +299,6 @@ Day52:
 ## [Hash Table](https://leetcode.com/tag/hash-table/)
 
 Day53:
-- [x] [LeetCode-1512: Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BChallenge2.swift)
-- [x] [LeetCode-771: Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BChallenge2.swift)
+- [x] [LeetCode-1512: Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge1.swift)
+- [x] [LeetCode-771: Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge2.swift)
+- [x] [LeetCode-1365: How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge3.swift)
