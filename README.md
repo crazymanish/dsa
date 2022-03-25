@@ -5,14 +5,14 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/051-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/053-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
 - [x] LinkList
 - [x] Stack
 - [x] Queue
-- [ ] Hashing
+- [x] Hashing
 - [x] Binary tree
 - [ ] Binary Search tree
 - [ ] Heap
@@ -295,3 +295,6 @@ Day51:
 Day52:
 - [x] [LeetCode-394: Decode String](https://leetcode.com/problems/decode-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem13.swift)
 - [x] [LeetCode-1: Two Sum](https://leetcode.com/problems/two-sum/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem14.swift)
+
+Day53:
+- [x] [LeetCode-1512: Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/Recursion/Recursion/ViewController%2BProblem15.swift)
