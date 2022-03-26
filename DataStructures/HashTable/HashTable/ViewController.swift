@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         solve15()
         solve16()
         solve17()
+        solve18()
     }
 }
 
