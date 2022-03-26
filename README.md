@@ -307,3 +307,4 @@ Day53:
 
 Day54:
 - [x] [LeetCode-1832: Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge5.swift)
+- [x] [LeetCode-804: Unique Morse Code Words](https://leetcode.com/problems/unique-morse-code-words/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge6.swift)
