@@ -5,13 +5,14 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/053-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/054-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
 - [x] LinkList
 - [x] Stack
 - [x] Queue
+- [x] Recursion
 - [x] Hashing
 - [x] Binary tree
 - [ ] Binary Search tree
@@ -20,8 +21,8 @@ Data Structure Goals:
 
 Algorithms Goals:
 - [x] Sliding window
-- [x] Recursion
-- [ ] Searching and Sorting
+- [ ] Searching
+- [ ] Sorting
 - [ ] String based algorithms (pattern matching)
 - [ ] Dynamic Programming
 - [ ] Greedy
@@ -303,3 +304,6 @@ Day53:
 - [x] [LeetCode-771: Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge2.swift)
 - [x] [LeetCode-1365: How Many Numbers Are Smaller Than the Current Number](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge3.swift)
 - [x] [LeetCode-1684: Count the Number of Consistent Strings](https://leetcode.com/problems/count-the-number-of-consistent-strings/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge4.swift)
+
+Day54:
+- [x] [LeetCode-1832: Check if the Sentence Is Pangram](https://leetcode.com/problems/check-if-the-sentence-is-pangram/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge5.swift)
