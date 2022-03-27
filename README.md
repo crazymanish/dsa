@@ -325,3 +325,4 @@ Day54:
 
 Day55:
 - [x] [LeetCode-1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge21.swift)
+- [x] [LeetCode-929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge22.swift)
