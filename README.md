@@ -346,3 +346,4 @@ Day59:
 
 Day60:
 - [x] [LeetCode-242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge31.swift)
+- [x] [LeetCode-217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge32.swift)
