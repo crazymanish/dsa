@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/059-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/060-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -343,3 +343,6 @@ Day58:
 Day59:
 - [x] [LeetCode-169. Majority Element](https://leetcode.com/problems/majority-element/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge29.swift)
 - [x] [LeetCode-1189. Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge30.swift)
+
+Day60:
+- [x] [LeetCode-242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge31.swift)
