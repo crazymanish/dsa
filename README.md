@@ -329,3 +329,4 @@ Day55:
 
 Day56:
 - [x] [LeetCode-1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge23.swift)
+- [x] [LeetCode-2068. Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge24.swift)
