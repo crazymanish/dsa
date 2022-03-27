@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/056-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/057-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -21,6 +21,7 @@ Data Structure Goals:
 
 Algorithms Goals:
 - [x] Sliding window
+- [ ] Binary Search
 - [ ] Searching
 - [ ] Sorting
 - [ ] String based algorithms (pattern matching)
@@ -330,3 +331,6 @@ Day55:
 Day56:
 - [x] [LeetCode-1399. Count Largest Group](https://leetcode.com/problems/count-largest-group/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge23.swift)
 - [x] [LeetCode-2068. Check Whether Two Strings are Almost Equivalent](https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge24.swift)
+
+Day57:
+- [x] [LeetCode-2062. Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge25.swift)
