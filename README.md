@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/057-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/058-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -335,3 +335,6 @@ Day56:
 Day57:
 - [x] [LeetCode-2062. Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge25.swift)
 - [x] [LeetCode-575. Distribute Candies](https://leetcode.com/problems/distribute-candies/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge26.swift)
+
+Day58:
+- [x] [LeetCode-884. Uncommon Words from Two Sentences](https://leetcode.com/problems/uncommon-words-from-two-sentences/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge27.swift)
