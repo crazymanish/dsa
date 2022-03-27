@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/054-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/055-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -322,3 +322,6 @@ Day54:
 - [x] [LeetCode-2085. Count Common Words With One Occurrence](https://leetcode.com/problems/count-common-words-with-one-occurrence/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge18.swift)
 - [x] [LeetCode-349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge19.swift)
 - [x] [LeetCode-500. Keyboard Row](https://leetcode.com/problems/keyboard-row/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge20.swift)
+
+Day55:
+- [x] [LeetCode-1160. Find Words That Can Be Formed by Characters](https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge21.swift)
