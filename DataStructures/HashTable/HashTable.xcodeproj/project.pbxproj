@@ -45,6 +45,7 @@
 		136125D427F0F80D0081672D /* ViewController+Challenge30.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136125D327F0F80D0081672D /* ViewController+Challenge30.swift */; };
 		136125D627F0FDE40081672D /* ViewController+Challenge31.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136125D527F0FDE40081672D /* ViewController+Challenge31.swift */; };
 		136125D827F0FF4E0081672D /* ViewController+Challenge32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136125D727F0FF4E0081672D /* ViewController+Challenge32.swift */; };
+		136125DA27F10E290081672D /* ViewController+Challenge33.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136125D927F10E290081672D /* ViewController+Challenge33.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		136125D327F0F80D0081672D /* ViewController+Challenge30.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge30.swift"; sourceTree = "<group>"; };
 		136125D527F0FDE40081672D /* ViewController+Challenge31.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge31.swift"; sourceTree = "<group>"; };
 		136125D727F0FF4E0081672D /* ViewController+Challenge32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge32.swift"; sourceTree = "<group>"; };
+		136125D927F10E290081672D /* ViewController+Challenge33.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Challenge33.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				136125D327F0F80D0081672D /* ViewController+Challenge30.swift */,
 				136125D527F0FDE40081672D /* ViewController+Challenge31.swift */,
 				136125D727F0FF4E0081672D /* ViewController+Challenge32.swift */,
+				136125D927F10E290081672D /* ViewController+Challenge33.swift */,
 				1361258B27EE5DC80081672D /* Main.storyboard */,
 				1361258E27EE5DCC0081672D /* Assets.xcassets */,
 				1361259027EE5DCC0081672D /* LaunchScreen.storyboard */,
@@ -254,6 +257,7 @@
 				136125A427EF59520081672D /* ViewController+Challenge6.swift in Sources */,
 				1361258627EE5DC80081672D /* AppDelegate.swift in Sources */,
 				136125B227EF7BC00081672D /* ViewController+Challenge13.swift in Sources */,
+				136125DA27F10E290081672D /* ViewController+Challenge33.swift in Sources */,
 				136125C227F067A20081672D /* ViewController+Challenge21.swift in Sources */,
 				136125C427F06D7F0081672D /* ViewController+Challenge22.swift in Sources */,
 				136125A227EF53140081672D /* ViewController+Challenge5.swift in Sources */,
