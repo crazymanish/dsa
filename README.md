@@ -334,3 +334,4 @@ Day56:
 
 Day57:
 - [x] [LeetCode-2062. Count Vowel Substrings of a String](https://leetcode.com/problems/count-vowel-substrings-of-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge25.swift)
+- [x] [LeetCode-575. Distribute Candies](https://leetcode.com/problems/distribute-candies/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge26.swift)

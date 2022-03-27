@@ -111,7 +111,7 @@ private class Solution {
     }
 }
 
-class SlidingWindow<T: Collection> {
+private class SlidingWindow<T: Collection> {
     let collection: T
 
     var startIndex: Int
