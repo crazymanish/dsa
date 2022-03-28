@@ -374,3 +374,4 @@ Day66:
 
 Day67:
 - [x] [LeetCode-409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge45.swift)
+- [x] [LeetCode-202. Happy Number](https://leetcode.com/problems/happy-number/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge46.swift)
