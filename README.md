@@ -358,3 +358,4 @@ Day62:
 
 Day63:
 - [x] [LeetCode-448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge37.swift)
+- [x] [LeetCode-748. Shortest Completing Word](https://leetcode.com/problems/shortest-completing-word/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge38.swift)
