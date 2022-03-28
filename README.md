@@ -362,3 +362,4 @@ Day63:
 
 Day64:
 - [x] [LeetCode-1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge39.swift)
+- [x] [LeetCode-13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge40.swift)
