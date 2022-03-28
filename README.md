@@ -378,3 +378,4 @@ Day67:
 
 Day68:
 - [x] [LeetCode-599. Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge47.swift)
+- [x] [LeetCode-594. Longest Harmonious Subsequence](https://leetcode.com/problems/longest-harmonious-subsequence/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge48.swift)
