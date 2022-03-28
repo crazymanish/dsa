@@ -366,3 +366,4 @@ Day64:
 
 Day65:
 - [x] [LeetCode-387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge41.swift)
+- [x] [LeetCode-2094. Finding 3-Digit Even Numbers](https://leetcode.com/problems/finding-3-digit-even-numbers/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge42.swift)
