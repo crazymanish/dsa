@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/064-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/065-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -363,3 +363,6 @@ Day63:
 Day64:
 - [x] [LeetCode-1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge39.swift)
 - [x] [LeetCode-13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge40.swift)
+
+Day65:
+- [x] [LeetCode-387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge41.swift)
