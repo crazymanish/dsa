@@ -370,3 +370,4 @@ Day65:
 
 Day66:
 - [x] [LeetCode-383. Ransom Note](https://leetcode.com/problems/ransom-note/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge43.swift)
+- [x] [LeetCode-350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge44.swift)
