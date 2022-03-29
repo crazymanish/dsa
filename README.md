@@ -386,3 +386,4 @@ Day69:
 
 Day70:
 - [x] [LeetCode-997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge51.swift)
+- [x] [LeetCode-160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge52.swift)
