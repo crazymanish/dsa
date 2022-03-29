@@ -390,3 +390,4 @@ Day70:
 
 Day71:
 - [x] [LeetCode-1796. Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge53.swift)
+- [x] [LeetCode-141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge54.swift)
