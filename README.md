@@ -5,7 +5,7 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/070-days-green.svg?style=flat)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/071-days-green.svg?style=flat)
 
 Data Structure Goals:
 - [x] Array
@@ -387,3 +387,6 @@ Day69:
 Day70:
 - [x] [LeetCode-997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge51.swift)
 - [x] [LeetCode-160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge52.swift)
+
+Day71:
+- [x] [LeetCode-1796. Second Largest Digit in a String](https://leetcode.com/problems/second-largest-digit-in-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge53.swift)
