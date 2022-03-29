@@ -394,3 +394,4 @@ Day71:
 
 Day72:
 - [x] [LeetCode-1790. Check if One String Swap Can Make Strings Equal](https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge55.swift)
+- [x] [LeetCode-819. Most Common Word](https://leetcode.com/problems/most-common-word/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge56.swift)
