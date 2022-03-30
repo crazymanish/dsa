@@ -410,3 +410,4 @@ Day75:
 
 Day76:
 - [x] [LeetCode-859. Buddy Strings](https://leetcode.com/problems/buddy-strings/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge63.swift)
+- [x] [LeetCode-1002. Find Common Characters](https://leetcode.com/problems/find-common-characters/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge64.swift)
