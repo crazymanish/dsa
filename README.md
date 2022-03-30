@@ -402,3 +402,4 @@ Day73:
 
 Day74:
 - [x] [LeetCode-290. Word Pattern](https://leetcode.com/problems/word-pattern/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge59.swift)
+- [x] [LeetCode-1805. Number of Different Integers in a String](https://leetcode.com/problems/number-of-different-integers-in-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge60.swift)
