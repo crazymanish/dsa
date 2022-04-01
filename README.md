@@ -431,3 +431,6 @@ Day80:
 Day81:
 - [x] [LeetCode-442. Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge73.swift)
 - [x] [LeetCode-1418. Display Table of Food Orders in a Restaurant](https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge74.swift)
+
+Day82:
+- [x] [LeetCode-1396. Design Underground System](https://leetcode.com/problems/design-underground-system/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge75.swift)
