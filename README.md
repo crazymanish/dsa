@@ -423,3 +423,6 @@ Day78:
 Day79:
 - [x] [LeetCode-1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge69.swift)
 - [x] [LeetCode-1261. Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge70.swift)
+
+Day80:
+- [x] [LeetCode-890. Find and Replace Pattern](https://leetcode.com/problems/find-and-replace-pattern/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge71.swift)
