@@ -414,4 +414,7 @@ Day76:
 
 Day77:
 - [x] [LeetCode-1282. Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge65.swift)
-- [x] [LeetCode-535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge65.swift)
+- [x] [LeetCode-535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge66.swift)
+
+Day78:
+- [x] [LeetCode-1817. Finding the Users Active Minutes](https://leetcode.com/problems/encode-and-decode-tinyurl/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge67.swift)
