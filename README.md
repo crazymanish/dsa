@@ -438,3 +438,4 @@ Day82:
 
 Day83:
 - [x] [LeetCode-1357. Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge77.swift)
+- [x] [LeetCode-451. Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge78.swift)
