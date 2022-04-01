@@ -417,4 +417,5 @@ Day77:
 - [x] [LeetCode-535. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge66.swift)
 
 Day78:
-- [x] [LeetCode-1817. Finding the Users Active Minutes](https://leetcode.com/problems/encode-and-decode-tinyurl/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge67.swift)
+- [x] [LeetCode-1817. Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge67.swift)
+- [x] [LeetCode-763. Partition Labels](https://leetcode.com/problems/partition-labels/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge68.swift)
