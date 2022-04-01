@@ -411,3 +411,6 @@ Day75:
 Day76:
 - [x] [LeetCode-859. Buddy Strings](https://leetcode.com/problems/buddy-strings/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge63.swift)
 - [x] [LeetCode-1002. Find Common Characters](https://leetcode.com/problems/find-common-characters/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge64.swift)
+
+Day77:
+- [x] [LeetCode-1282. Group the People Given the Group Size They Belong To](https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge65.swift)
