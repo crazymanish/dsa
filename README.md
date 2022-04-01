@@ -435,3 +435,6 @@ Day81:
 Day82:
 - [x] [LeetCode-1396. Design Underground System](https://leetcode.com/problems/design-underground-system/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge75.swift)
 - [x] [LeetCode-2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge76.swift)
+
+Day83:
+- [x] [LeetCode-1357. Apply Discount Every n Orders](https://leetcode.com/problems/apply-discount-every-n-orders/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge77.swift)
