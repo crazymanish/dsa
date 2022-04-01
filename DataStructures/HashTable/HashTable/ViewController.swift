@@ -91,5 +91,6 @@ class ViewController: UIViewController {
         solve77()
         solve78()
         solve79()
+        solve80()
     }
 }

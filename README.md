@@ -442,3 +442,4 @@ Day83:
 
 Day84:
 - [x] [LeetCode-1807. Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge79.swift)
+- [x] [LeetCode-347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) - [**Solution**](https://github.com/crazymanish/dsa/blob/main/DataStructures/HashTable/HashTable/ViewController%2BChallenge80.swift)
