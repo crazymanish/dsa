@@ -2,6 +2,25 @@ class Solution {
     func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
         //Idea: We only have to count the number of nodes with zero incoming edges.
         
+        var sourceNodes: Set<Int> = Set(0..<n)
+        
+        for edge in edges {
+            let destinationNode = edge[1]
+            
+            if sourceNodes.contains(destinationNode) {
+                sourceNodes.remove(destinationNode)
+            }
+        }
+        
+        return Array(sourceNodes)
+    }
+}
+
+/*
+class Solution {
+    func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
+        //Idea: We only have to count the number of nodes with zero incoming edges.
+        
         var sourceNodes: Set<Int> = []
         var destinationNodes: Set<Int> = []
         
@@ -23,3 +42,4 @@ class Solution {
         return Array(sourceNodes)
     }
 }
+*/
