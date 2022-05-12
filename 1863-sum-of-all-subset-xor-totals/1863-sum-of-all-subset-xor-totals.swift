@@ -1,12 +1,12 @@
 class Solution {
     func subsetXORSum(_ nums: [Int]) -> Int {
         let lastIndex = nums.count-1
-        var allSubsets: [[Int]] = []
+        var outputSum = 0
         var currentSubset: [Int] = []
         
         func findAllSubSets(_ currentIndex: Int) {
             if currentIndex > lastIndex { 
-                allSubsets.append(currentSubset)
+                outputSum += currentSubset.xorValue
                 return 
             }
             
@@ -25,11 +25,6 @@ class Solution {
         }
         
         findAllSubSets(0)
-        
-        var outputSum = 0
-        for subset in allSubsets {
-            outputSum += subset.xorValue
-        }
         
         return outputSum
     }
