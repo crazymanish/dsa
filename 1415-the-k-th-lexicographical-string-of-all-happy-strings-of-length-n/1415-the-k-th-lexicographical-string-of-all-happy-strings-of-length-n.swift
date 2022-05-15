@@ -1,9 +1,10 @@
 class Solution {
     func getHappyString(_ n: Int, _ k: Int) -> String {
+        let characters: [Character] = ["a", "b", "c"]
+        
         var allHappyStringCount = 0
         var lastHappyString = ""
         var currentHappyString = ""
-        var characters: [Character] = ["a", "b", "c"]
         
         var isKthHappyStringFound: Bool { allHappyStringCount == k }
         
