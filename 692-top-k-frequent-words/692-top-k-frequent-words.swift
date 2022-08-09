@@ -7,13 +7,13 @@ class Solution {
         }
         
         let topFrequentWords: [String] = Array(hashMap.keys.sorted {
-            let leftWordfrequency = hashMap[$0] ?? 0
-            let rightWordfrequency = hashMap[$1] ?? 0
+            let leftWordFrequency = hashMap[$0] ?? 0
+            let rightWordFrequency = hashMap[$1] ?? 0
             
-            if leftWordfrequency == rightWordfrequency {
+            if leftWordFrequency == rightWordFrequency {
                 return $0 < $1
             } else {
-                return leftWordfrequency > rightWordfrequency
+                return leftWordFrequency > rightWordFrequency
             }
         })
     
