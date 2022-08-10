@@ -50,3 +50,22 @@ fileprivate class Solution {
         return root
     }
 }
+
+fileprivate class Solution2 {
+    func sortedArrayToBST(_ nums: [Int]) -> TreeNode? {
+        
+        func buildBST(_ low: Int, _ high: Int) -> TreeNode? {
+            guard low <= high else { return nil }
+
+            let mid = low + (high - low) / 2
+
+            let root = TreeNode(nums[mid])
+            root.left = buildBST(low, mid - 1)
+            root.right = buildBST(mid + 1, high)
+
+            return root
+        }
+        
+        return buildBST(0, nums.count-1)
+    }
+}
