@@ -15,6 +15,7 @@
  *     }
  * }
  */
+
 class Solution {
     func isValidBST(_ root: TreeNode?) -> Bool {
         guard let currentNode = root else { return false }
