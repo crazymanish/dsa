@@ -30,6 +30,7 @@ import Foundation
 extension ViewController {
     func solve17() {
         print("Setting up Problem17 input!")
+        
         let root = TreeNode(6)
         root.left = TreeNode(2)
         root.right = TreeNode(8)
