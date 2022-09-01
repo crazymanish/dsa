@@ -38,3 +38,29 @@ class Solution {
         findGoodNodes(currentNode.right, currentPathMaxNode: newMaxNodeValue)
     }
 }
+
+
+class Solution {
+    func goodNodes(_ root: TreeNode?) -> Int {
+        guard let root = root else { return 0 }
+
+        var goodNodes = 0
+        
+        func findGoodNodes(_ root: TreeNode?, currentPathMaxNode: Int) {
+            guard let currentNode = root else { return }
+
+            var newMaxNodeValue = currentPathMaxNode
+            if currentNode.val >= currentPathMaxNode {
+                newMaxNodeValue = currentNode.val
+
+                goodNodes += 1
+            }
+
+            findGoodNodes(currentNode.left, currentPathMaxNode: newMaxNodeValue)
+            findGoodNodes(currentNode.right, currentPathMaxNode: newMaxNodeValue)
+        }
+
+        findGoodNodes(root, currentPathMaxNode: root.val)
+        return goodNodes
+    }
+}
