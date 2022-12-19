@@ -38,3 +38,36 @@ class Solution {
         return hasValidPathFromSourceNode(source)
     }
 }
+
+
+class Solution {
+  func validPath(_ n: Int, _ edges: [[Int]], _ start: Int, _ end: Int) -> Bool {
+    var graph = [[Int]](repeating: [], count: n)
+
+    for edge in edges {
+      graph[edge[0]].append(edge[1])
+      graph[edge[1]].append(edge[0])
+    }
+
+    var visited = Set<Int>()
+    var queue = [Int]()
+    queue.append(start)
+
+    while !queue.isEmpty {
+      let curr = queue.removeFirst()
+      visited.insert(curr)
+
+      if curr == end {
+        return true
+      }
+
+      for edge in graph[curr] {
+        if !visited.contains(edge) {
+          queue.append(edge)
+        }
+      }
+    }
+
+    return false
+  }
+}
