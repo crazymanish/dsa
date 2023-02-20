@@ -5,4 +5,4 @@ Data Structure &amp; Algorithms (Swift language)
 [![LeetCode: @crazymanish](https://img.shields.io/badge/LeetCode-@crazymanish-blue.svg?style=flat)](https://leetcode.com/crazymanish/)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
-**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/314-days-green.svg?style=flat)(last update: 14-Jan-2023)
+**Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/351-days-green.svg?style=flat)(last update: 20-Feb-2023)
