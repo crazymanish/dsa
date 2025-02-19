@@ -1,36 +1,30 @@
 class Solution {
     func getHappyString(_ n: Int, _ k: Int) -> String {
         let characters: [Character] = ["a", "b", "c"]
-        
-        var allHappyStringCount = 0
+
+        var happyStringCount = 0
         var lastHappyString = ""
         var currentHappyString = ""
-        
-        var isKthHappyStringFound: Bool { allHappyStringCount == k }
-        
-        func findHappyString() {
-            // we already found kth happy string, STOP now. No more looking
-            if isKthHappyStringFound { return }
-            
-            // Found a happy-string with size n
-            if currentHappyString.count == n { 
-                allHappyStringCount += 1 
+
+        func generateHappyString(currentIndex: Int) {
+            if happyStringCount == k { return } // Early termination
+
+            if currentIndex == n {
+                happyStringCount += 1
                 lastHappyString = currentHappyString
                 return
             }
-            
-            for character in characters {
-                let lastCharacter = currentHappyString.last
-                
-                if currentHappyString.isEmpty || lastCharacter! != character {
-                    currentHappyString += String(character)
-                    findHappyString()
-                    currentHappyString.removeLast() // backtracking
-                }
+
+            for char in characters {
+                // Avoid force-unwrap with optional binding
+                if let lastChar = currentHappyString.last, lastChar == char { continue } 
+                currentHappyString.append(char)
+                generateHappyString(currentIndex: currentIndex + 1)
+                currentHappyString.removeLast() // Backtracking
             }
         }
-        
-        findHappyString()
-        return isKthHappyStringFound ? lastHappyString : ""
+
+        generateHappyString(currentIndex: 0)
+        return happyStringCount == k ? lastHappyString : ""
     }
 }
