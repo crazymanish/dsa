@@ -10,9 +10,9 @@ class Solution {
             
             // Base case, when we found one subset
             if currentIndex > lastIndex { 
-                
+
                 // Update answer if this does not contain in input nums array
-                if nums.contains(currentSubset) == false && answer == nil {
+                if nums.contains(currentSubset) == false {
                     answer = currentSubset
                 }
                 
