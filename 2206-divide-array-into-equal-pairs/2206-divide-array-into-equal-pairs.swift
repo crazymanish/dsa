@@ -1,23 +1,19 @@
 class Solution {
     func divideArray(_ nums: [Int]) -> Bool {
-        let expectedPairsCount = nums.count / 2
-        let sortedNums = nums.sorted()
-        var outputPairsCount = 0
-        
-        var pairIndex = 0
-        for index in 0..<expectedPairsCount {
-            let firstElement = sortedNums[2*index]
-            let secondElement = sortedNums[2*index+1]
-            
-            if firstElement == secondElement {
-                outputPairsCount += 1 
-            } else {
-                break 
-            }
-            
-            pairIndex += 1
+        guard nums.count % 2 == 0 else { return false } // Early exit if odd number of elements
+
+        var counts: [Int: Int] = [:] // Dictionary to store element counts
+
+        for num in nums {
+            counts[num, default: 0] += 1 // Increment count for each number
         }
-        
-        return outputPairsCount == expectedPairsCount
+
+        for count in counts.values {
+            if count % 2 != 0 { // Check if any count is odd
+                return false // If any count is odd, pairing is impossible
+            }
+        }
+
+        return true // All counts are even, pairing is possible
     }
 }
