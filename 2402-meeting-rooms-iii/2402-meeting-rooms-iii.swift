@@ -1,91 +1,158 @@
+/*
+Time Complexity: O(mlogm+mlogn)
+- m is the number of meetings, n is the number of rooms.
+- Sorting the m meetings takes O(mlogm).
+- The main loop runs m times. In each iteration, we perform heap operations (push, pop). The heaps are at most size n. Heap operations take O(logn) time. This gives us O(mlogn).
+- The total complexity is dominated by these two operations.
+
+Space Complexity: O(m+n)
+- Storing the sorted meetings requires O(m) space.
+- The heaps and the booking count array require O(n) space.
+*/
 class Solution {
     func mostBooked(_ n: Int, _ meetings: [[Int]]) -> Int {
-        var queue = meetings.sorted{$0[0] < $1[0]}   // converting today's meetings into a queue
-        var first = 0     // start of the queue
-
-        var counter = Array(repeating: 0, count: n)  // for counting the most popular room
-        var meetingsHeap = Heap<Meeting>(<)    // (end, roomIndex ) - to find out when and what room becomes free earlier 
-        var roomsHeap = Heap<Int>(<)          // to know the lowest available room for us 
-        (0..<n).forEach{roomsHeap.push($0)}   // fill the heap with all free rooms at first
+        // Sort meetings by their start time to process them chronologically.
+        let sortedMeetings = meetings.sorted { $0[0] < $1[0] }
         
-        while first < queue.count {
-            let (start, end) = (queue[first][0], queue[first][1])  // start and end of our new meeting
+        // Tracks the usage count for each room.
+        var bookingCounts = Array(repeating: 0, count: n)
+        
+        // Min-heap of occupied rooms, ordered by end time. Stores `OngoingMeeting`.
+        // This helps us efficiently find which room becomes free next.
+        var occupiedRoomsHeap = Heap<OngoingMeeting>(<)
+        
+        // Min-heap of available room numbers, ordered by room index.
+        // This helps us efficiently find the available room with the lowest index.
+        var availableRoomsHeap = Heap<Int>(<)
+        (0..<n).forEach { availableRoomsHeap.push($0) }
+        
+        // Process each meeting from the sorted list.
+        for meeting in sortedMeetings {
+            let (start, end) = (meeting[0], meeting[1])
+            let duration = end - start
 
-            while !meetingsHeap.isEmpty && meetingsHeap[0].end <= start { 
-                roomsHeap.push( meetingsHeap.pop()!.room )    // collect all available rooms until the start of our new meeting
+            // First, free up any rooms whose meetings have ended by the current meeting's start time.
+            while !occupiedRoomsHeap.isEmpty && occupiedRoomsHeap.peek()!.endTime <= start {
+                let finishedMeeting = occupiedRoomsHeap.pop()!
+                availableRoomsHeap.push(finishedMeeting.roomIndex)
             }
             
-            if !roomsHeap.isEmpty { 
-                let availableLowest = roomsHeap.pop()!    // take the lowest available room for our new meeting
-                counter[availableLowest] += 1
-                meetingsHeap.push(Meeting(end, availableLowest ))
+            if !availableRoomsHeap.isEmpty {
+                // Case 1: An ideal room is available.
+                // Get the available room with the lowest index.
+                let lowestAvailableRoomIndex = availableRoomsHeap.pop()!
+                bookingCounts[lowestAvailableRoomIndex] += 1
+                
+                // Place the new meeting in this room and add it to the occupied heap.
+                occupiedRoomsHeap.push(OngoingMeeting(end, lowestAvailableRoomIndex))
             } else {
-                let nextFree = meetingsHeap.pop()!    // but if all rooms are occupied we are waiting until a closest one becomes free
-                counter[nextFree.room] += 1 
-                meetingsHeap.push(
-                    Meeting( nextFree.end + end - start, nextFree.room )   // adding the duration of our new meeting to the end of the closest one
-                )
+                // Case 2: All rooms are busy. We must wait.
+                // Get the room that will be free the soonest.
+                let earliestFinishingMeeting = occupiedRoomsHeap.pop()!
+                bookingCounts[earliestFinishingMeeting.roomIndex] += 1
+                
+                // The new meeting is delayed. Its new end time is the room's free time plus the meeting's duration.
+                let newEndTime = earliestFinishingMeeting.endTime + duration
+                occupiedRoomsHeap.push(OngoingMeeting(newEndTime, earliestFinishingMeeting.roomIndex))
             }
-            first += 1
         }
         
-        return counter.firstIndex(of: counter.max()!)! // most used room
+        // Find the index of the room with the maximum number of bookings.
+        var mostBookedRoom = 0
+        for i in 1..<n {
+            if bookingCounts[i] > bookingCounts[mostBookedRoom] {
+                mostBookedRoom = i
+            }
+        }
+        return mostBookedRoom
     }
 }
 
-// Meeting
-struct Meeting: Comparable {
-    let end, room: Int
-    init(_ end: Int, _ room: Int) {
-        self.end = end
-        self.room = room
+// Represents a meeting currently happening in a specific room.
+struct OngoingMeeting: Comparable {
+    let endTime: Int
+    let roomIndex: Int
+    
+    init(_ endTime: Int, _ roomIndex: Int) {
+        self.endTime = endTime
+        self.roomIndex = roomIndex
     }
-    static func < (lhs: Meeting, rhs: Meeting) -> Bool { 
-        return lhs.end == rhs.end ? lhs.room < rhs.room : lhs.end < rhs.end   // This condition is important
+    
+    // Defines the order for the min-heap.
+    // Primarily order by end time. If end times are equal, the meeting in the lower-indexed room comes first.
+    // This tie-breaking is crucial for problems where the room index matters when freeing up simultaneously.
+    static func < (lhs: OngoingMeeting, rhs: OngoingMeeting) -> Bool {
+        if lhs.endTime != rhs.endTime {
+            return lhs.endTime < rhs.endTime
+        }
+        return lhs.roomIndex < rhs.roomIndex
     }
 }
 
 
+// A generic Min-Heap implementation.
 struct Heap<T: Comparable> {
     private var heap = [T]()
-    private let comparator: (T, T)->Bool 
+    private let comparator: (T, T) -> Bool
     
-    init(_ comparator: @escaping (T, T)->Bool) {
+    init(_ comparator: @escaping (T, T) -> Bool) {
         self.comparator = comparator
     }
     
-    subscript(i: Int) -> T {heap[i]}
-    var isEmpty: Bool {heap.isEmpty}
-    var count: Int {heap.count}
+    var isEmpty: Bool { heap.isEmpty }
+    var count: Int { heap.count }
     
+    func peek() -> T? { heap.first }
+    
+    // Adds an element to the heap while maintaining the heap property.
     mutating func push(_ val: T) {
         heap.append(val)
-        var pos = heap.count-1
-        
-        while pos > 0 && comparator(heap[pos], heap[(pos-1)/2]) {
-            heap.swapAt(pos, (pos-1)/2)
-            pos = (pos-1)/2
+        var pos = heap.count - 1
+        // Sift-up: move the new element up until its parent is smaller.
+        while pos > 0 && comparator(heap[pos], heap[(pos - 1) / 2]) {
+            heap.swapAt(pos, (pos - 1) / 2)
+            pos = (pos - 1) / 2
         }
     }
     
+    // Removes and returns the top element of the heap.
     mutating func pop() -> T? {
-        guard let ans = heap.first else { return nil }
-        heap[0] = heap.last!
-        var pos = 0
+        guard !heap.isEmpty else { return nil }
         
-        while pos*2 + 2 < heap.count {
-            let swapSonInd = 
-                comparator(heap[pos*2 + 1], heap[pos*2 + 2]) ?
-                (pos*2 + 1) : (pos*2 + 2)
-            if comparator(heap[swapSonInd], heap[pos]) {
-                heap.swapAt(pos, swapSonInd)
-                pos = swapSonInd
-            } else {
-                break
-            }
+        let topElement = heap[0]
+        if heap.count > 1 {
+            heap[0] = heap.removeLast()
+            siftDown(from: 0)
+        } else {
+            heap.removeLast()
         }
         
-        heap.popLast()
-        return ans
+        return topElement
+    }
+    
+    // Sift-down: moves an element down to its correct position.
+    private mutating func siftDown(from pos: Int) {
+        var currentPos = pos
+        let count = heap.count
+        
+        while true {
+            let leftChild = 2 * currentPos + 1
+            let rightChild = 2 * currentPos + 2
+            var smallest = currentPos
+            
+            if leftChild < count && comparator(heap[leftChild], heap[smallest]) {
+                smallest = leftChild
+            }
+            if rightChild < count && comparator(heap[rightChild], heap[smallest]) {
+                smallest = rightChild
+            }
+            
+            if smallest == currentPos {
+                break
+            }
+            
+            heap.swapAt(currentPos, smallest)
+            currentPos = smallest
+        }
     }
 }
