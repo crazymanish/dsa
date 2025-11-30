@@ -1,38 +1,64 @@
+/// ---------------------------------------------------------------------------
+/// Time Complexity:
+///   • O(n), where n = nums.count
+///     Each element is processed once and dictionary lookups are O(1).
+///
+/// Space Complexity:
+///   • O(p) in the worst case for storing remainders in the dictionary.
+///     (But effectively O(n) since remainders come from subarray sums.)
+///
+/// Problem Summary:
+///   Remove the smallest subarray so that the remaining array's sum becomes
+///   divisible by p. This is equivalent to removing a subarray whose sum % p
+///   equals the totalSum % p.
+///
+/// Core Idea:
+///   Let totalSum % p = k.
+///   We want a subarray with sum % p = k so removing it fixes divisibility.
+///
+///   Using prefix sums:
+///     If prefix[i] % p == r,
+///     we need a prefix[j] % p == (r - k + p) % p to form such subarray.
+///
+///   We map prefix remainders → earliest index using a dictionary
+///   and try to minimize (i - j).
+/// ---------------------------------------------------------------------------
 class Solution {
     func minSubarray(_ nums: [Int], _ p: Int) -> Int {
-        // Calculate the total sum of the elements in the array.
-        let total = nums.reduce(0) { $0 + $1 }
+        // Compute total sum remainder.
+        let totalSum = nums.reduce(0, +)
+        let targetRemainder = totalSum % p
         
-        // Calculate the remainder when the total sum is divided by p.
-        let k = total % p
+        // If already divisible, no need to remove anything.
+        if targetRemainder == 0 { return 0 }
         
-        // If the sum is already divisible by p, no removal is needed.
-        if k == 0 {
-            return 0
-        }
+        // Running prefix sum.
+        var prefixSum = 0
         
-        var sum = 0
-        // Store cumulative sums and their indices.
-        var remindersToIndexes: [Int: Int] = [0: -1]
-        var res = nums.count
-
-        for (index, num) in nums.enumerated() {
-            sum += num
-            let reminder = sum % p // Calculate the remainder of the current subarray sum.
+        // Map: remainder → earliest index where this remainder occurs.
+        // Start with remainder 0 at index -1 (empty prefix).
+        var earliestIndexForRemainder: [Int: Int] = [0: -1]
+        
+        var minLength = nums.count
+        
+        for (index, number) in nums.enumerated() {
+            prefixSum += number
+            let currentRemainder = prefixSum % p
             
-            // Calculate the other remainder needed to make the sum divisible by p.
-            var other = (reminder - k + p) % p
+            // We want: (currentRemainder - previousRemainder) % p == targetRemainder
+            // → previousRemainder = (currentRemainder - targetRemainder + p) % p
+            let neededRemainder = (currentRemainder - targetRemainder + p) % p
             
-            if let prefix = remindersToIndexes[other] {
-                // Update the result with the minimum subarray length.
-                res = min(res, index - prefix)
+            if let prevIndex = earliestIndexForRemainder[neededRemainder] {
+                minLength = min(minLength, index - prevIndex)
             }
-
-            // Store the current remainder and index.
-            remindersToIndexes[reminder] = index
+            
+            // Update earliest occurrence of this remainder.
+            // (We always overwrite, because later index is less useful.)
+            earliestIndexForRemainder[currentRemainder] = index
         }
         
-        // Ensure that the entire array is not removed.
-        return res < nums.count ? res : -1
+        // If minLength == nums.count, we couldn't remove a valid subarray.
+        return minLength == nums.count ? -1 : minLength
     }
 }
