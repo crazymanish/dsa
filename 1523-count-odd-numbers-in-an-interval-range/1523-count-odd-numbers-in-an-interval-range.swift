@@ -1,23 +1,17 @@
+/// ---------------------------------------------------------------------------
+/// Time Complexity:   O(1)
+/// Space Complexity:  O(1)
+///
+/// Explanation:
+///   The number of odd integers in [low, high] is:
+///       (high + 1) / 2  -  low / 2
+///
+///   This works because:
+///     • (x / 2) gives number of odds ≤ (x - 1)
+///     • ((x + 1) / 2) gives number of odds ≤ x
+/// ---------------------------------------------------------------------------
 class Solution {
     func countOdds(_ low: Int, _ high: Int) -> Int {
-        guard low != high else {
-            return low.isEven ? 0 : 1
-        }
-        
-        // count of numbers in between
-        let count = (high - low) - 1
-        
-        switch (low.isEven, high.isEven) {
-            case (true, true):
-                return (count / 2) + 1
-            case (false, false):
-                return (count / 2) + 2
-            default:
-                return (count / 2) + 1
-        }
+        return (high + 1) / 2 - (low / 2)
     }
-}
-
-extension Int {
-    var isEven: Bool { self % 2 == 0 }
 }
