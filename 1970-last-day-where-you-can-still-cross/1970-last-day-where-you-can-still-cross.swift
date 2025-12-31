@@ -1,35 +1,83 @@
+/// ---------------------------------------------------------------------------
+/// Time Complexity:
+///   • O(R * C * α(R * C))
+///     - R = number of rows, C = number of columns
+///     - We process each cell once in reverse
+///     - Each union/find operation is amortized inverse-Ackermann (α)
+///
+/// Space Complexity:
+///   • O(R * C)
+///     - DSU structures
+///     - Set to track land cells
+///
+/// Problem Summary:
+///   We want the latest day when it is still possible to cross from the
+///   top row to the bottom row using only land cells.
+///
+/// Key Insight:
+///   Instead of simulating days forward (flooding land → water),
+///   we process days in reverse:
+///     - Start with all water
+///     - Add land cells back one by one
+///     - Use Union-Find to check when top and bottom become connected
+///
+/// Two virtual nodes are used:
+///     - TOP (0)
+///     - BOTTOM (R*C + 1)
+/// ---------------------------------------------------------------------------
+
 class Solution {
-    func latestDayToCross(_ row: Int, _ col: Int, _ cells: [[Int]]) -> Int {
-        let count = cells.count
-        let dsu = DSU(row * col+2)
-        let lastRow = (row-1)*col
-        var cellIndices: Set<Int> = []
+    func latestDayToCross(_ rowCount: Int, _ colCount: Int, _ cells: [[Int]]) -> Int {
+        let totalCells = rowCount * colCount
+        let topVirtual = 0
+        let bottomVirtual = totalCells + 1
         
-        for i in 0..<col {
-            dsu.union(i+1, 0)
-            dsu.union(lastRow+i+1, row * col + 1)
+        // DSU size = total cells + 2 virtual nodes
+        let dsu = DSU(totalCells + 2)
+        
+        // Track which cells are currently land
+        var landCells = Set<Int>()
+        
+        // Connect top row cells to TOP virtual node
+        for col in 0..<colCount {
+            dsu.union(topVirtual, col + 1)
         }
         
-        for i in (0..<count).reversed() {
-            let cell = cells[i]
-            let curRow = cell[0] - 1
-            let curCol = cell[1] - 1
-            let cellIndex = curRow * col + curCol
+        // Connect bottom row cells to BOTTOM virtual node
+        let bottomRowStart = (rowCount - 1) * colCount
+        for col in 0..<colCount {
+            dsu.union(bottomVirtual, bottomRowStart + col + 1)
+        }
+        
+        // Process days in reverse (adding land back)
+        for day in stride(from: cells.count - 1, through: 0, by: -1) {
+            let r = cells[day][0] - 1
+            let c = cells[day][1] - 1
+            let index = r * colCount + c
+            let dsuIndex = index + 1   // offset because 0 is TOP
             
-            for pair in [(-1,0),(1,0),(0,-1),(0,1)] {
-                let nextRow = curRow + pair.0
-                if nextRow < 0 || nextRow >= row { continue }
-                let nextCol = curCol + pair.1
-                if nextCol < 0 || nextCol >= col { continue }
-                let nextCellIndex = nextRow * col + nextCol
-                if cellIndices.contains(nextCellIndex) {
-                    dsu.union(cellIndex+1, nextCellIndex+1)
+            // Check 4-directional neighbors
+            for (dr, dc) in [(-1,0), (1,0), (0,-1), (0,1)] {
+                let nr = r + dr
+                let nc = c + dc
+                
+                guard nr >= 0, nr < rowCount, nc >= 0, nc < colCount else {
+                    continue
+                }
+                
+                let neighborIndex = nr * colCount + nc
+                if landCells.contains(neighborIndex) {
+                    dsu.union(dsuIndex, neighborIndex + 1)
                 }
             }
             
-            cellIndices.insert(cellIndex)
+            // Mark this cell as land
+            landCells.insert(index)
             
-            if dsu.find(0) == dsu.find(row * col+1) { return i }
+            // If top and bottom are connected, crossing is possible
+            if dsu.find(topVirtual) == dsu.find(bottomVirtual) {
+                return day
+            }
         }
         
         return -1
@@ -37,37 +85,35 @@ class Solution {
 }
 
 class DSU {
-    private var roots: [Int]
-    private var ranks: [Int]
+    private var parent: [Int]
+    private var rank: [Int]
     
-    init(_ n: Int) {
-        roots = Array(0..<n)
-        ranks = Array(repeating: 0, count: n)
+    init(_ size: Int) {
+        parent = Array(0..<size)
+        rank = Array(repeating: 0, count: size)
     }
     
-    func find(_ value: Int) -> Int {
-        var parent = roots[value]
-        
-        while parent != roots[parent] {
-            roots[parent] = roots[roots[parent]]
-            parent = roots[parent]
+    func find(_ x: Int) -> Int {
+        if parent[x] != x {
+            parent[x] = find(parent[x])   // Path compression
         }
-        
-        return parent
+        return parent[x]
     }
     
     func union(_ x: Int, _ y: Int) {
-        let rx = find(x)
-        let ry = find(y)
-        if rx == ry { return }
+        let rootX = find(x)
+        let rootY = find(y)
         
-        if ranks[rx] > ranks[ry] {
-            roots[ry] = rx
+        guard rootX != rootY else { return }
+        
+        // Union by rank
+        if rank[rootX] < rank[rootY] {
+            parent[rootX] = rootY
+        } else if rank[rootX] > rank[rootY] {
+            parent[rootY] = rootX
         } else {
-            roots[rx] = ry
-            if ranks[rx] == ranks[ry] {
-                ranks[ry] += 1
-            }
+            parent[rootY] = rootX
+            rank[rootX] += 1
         }
     }
 }
