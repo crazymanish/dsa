@@ -13,26 +13,60 @@
  *     }
  * }
  */
+
 class Solution {
+    /// -----------------------------------------------------------------------
+    /// Time Complexity:
+    ///   • O(n), where n = number of nodes in the tree
+    ///     We perform a single DFS traversal.
+    ///
+    /// Space Complexity:
+    ///   • O(n)
+    ///     - Stores subtree sums for all nodes
+    ///     - Recursion stack in the worst case
+    ///
+    /// Problem Summary:
+    ///   Remove exactly one edge from the binary tree.
+    ///   This splits the tree into two subtrees.
+    ///   Maximize the product of the sums of the two resulting subtrees.
+    ///
+    /// Approach:
+    ///   - Use DFS to compute the sum of every subtree.
+    ///   - The total sum of the tree is known after DFS.
+    ///   - For each subtree with sum `s`, the product is:
+    ///         s * (totalSum - s)
+    ///   - Track the maximum such product.
+    /// -----------------------------------------------------------------------
     func maxProduct(_ root: TreeNode?) -> Int {
-        var subtreeSums: [Int] = []
-
-        func calculateSum(root: TreeNode?) -> Int {
-            guard let node = root else { return 0 }
-            let sum = node.val + calculateSum(root: node.left) + calculateSum(root: node.right)
-            subtreeSums.append(sum)
-            return sum
-        }
-
-        let totalSum = calculateSum(root: root)
-        var answer = 0
-        for subtreeSum in subtreeSums {
-            answer = max(
-                answer,
-                subtreeSum * (totalSum - subtreeSum)
-            )
+        let MOD = 1_000_000_007
+        
+        // Stores the sum of every subtree
+        var allSubtreeSums: [Int] = []
+        
+        // DFS that returns the sum of the subtree rooted at `node`
+        func computeSubtreeSum(_ node: TreeNode?) -> Int {
+            guard let node = node else { return 0 }
+            
+            let leftSum = computeSubtreeSum(node.left)
+            let rightSum = computeSubtreeSum(node.right)
+            
+            let subtreeSum = node.val + leftSum + rightSum
+            allSubtreeSums.append(subtreeSum)
+            
+            return subtreeSum
         }
         
-        return answer % Int(1E9+7)
+        // Total sum of the entire tree
+        let totalTreeSum = computeSubtreeSum(root)
+        
+        var maxProductValue = 0
+        
+        // Try removing the edge above each subtree
+        for subtreeSum in allSubtreeSums {
+            let product = subtreeSum * (totalTreeSum - subtreeSum)
+            maxProductValue = max(maxProductValue, product)
+        }
+        
+        return maxProductValue % MOD
     }
 }
