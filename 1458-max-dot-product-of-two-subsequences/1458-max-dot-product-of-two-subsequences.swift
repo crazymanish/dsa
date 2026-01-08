@@ -1,33 +1,57 @@
 class Solution {
-    func maxDotProduct(_ nums1: [Int], _ nums2: [Int]) -> Int {
-        // Build DP along the shorter edge.
-        guard nums1.count >= nums2.count else {
-            return maxDotProduct(nums2, nums1)
+    /// -----------------------------------------------------------------------
+    /// Time Complexity:
+    ///   • O(m * n)
+    ///     - m = firstArray.count
+    ///     - n = secondArray.count
+    ///
+    /// Space Complexity:
+    ///   • O(n)
+    ///     - Only one DP row of size (n + 1) is stored.
+    /// -----------------------------------------------------------------------
+    func maxDotProduct(_ firstArray: [Int], _ secondArray: [Int]) -> Int {
+        // Ensure the second array is the shorter one to minimize space usage
+        if firstArray.count < secondArray.count {
+            return maxDotProduct(secondArray, firstArray)
         }
         
-        // Fill the first row and the first column with a number
-        // that is lower than the minimal result to simplify the DP
-        // and ensure it's never used.
-        let lowerBound = -1000001
-        var previousDP = Array(repeating: lowerBound, count: nums2.count+1)
+        let shorterLength = secondArray.count
         
-        for i in 1...nums1.count {
-            var dp = Array(repeating: 0, count: nums2.count+1)
-            dp[0] = lowerBound
+        // Sentinel value smaller than any valid dot product
+        let negativeInfinity = -1_000_001
+        
+        // dpPrevious[j] = max dot product using:
+        //   firstArray[0..<i-1] and secondArray[0..<j]
+        var dpPrevious = Array(repeating: negativeInfinity, count: shorterLength + 1)
+        
+        // Iterate over elements of the longer array
+        for firstIndex in 1...firstArray.count {
             
-            for j in 1...nums2.count {
-                // Result ignoring i and j product.
-                let a = max(previousDP[j], dp[j - 1])
+            // dpCurrent[j] = max dot product using:
+            //   firstArray[0..<firstIndex] and secondArray[0..<j]
+            var dpCurrent = Array(repeating: 0, count: shorterLength + 1)
+            dpCurrent[0] = negativeInfinity
+            
+            for secondIndex in 1...shorterLength {
+                // Option 1: skip one element (do not form a pair here)
+                let skipCurrentPair =
+                    max(dpPrevious[secondIndex],
+                        dpCurrent[secondIndex - 1])
                 
-                // Result using i and j product.
-                let b = max(previousDP[j-1], 0) + nums1[i-1] * nums2[j-1]
-                dp[j] = max(a, b)
+                // Option 2: take current elements as a pair
+                let takeCurrentPair =
+                    max(dpPrevious[secondIndex - 1], 0) +
+                    firstArray[firstIndex - 1] * secondArray[secondIndex - 1]
+                
+                // Best result up to these indices
+                dpCurrent[secondIndex] = max(skipCurrentPair, takeCurrentPair)
             }
             
-            // Update the previous row.
-            previousDP = dp
+            // Move to the next iteration
+            dpPrevious = dpCurrent
         }
         
-        return previousDP[nums2.count]
+        // Final answer is the DP value using all elements
+        return dpPrevious[shorterLength]
     }
 }
