@@ -1,53 +1,42 @@
 class Solution {
-    private var minimumDifference = Int.max
-
+    /// -----------------------------------------------------------------------
+    /// Time Complexity:
+    ///   • O(n log n)
+    ///     - Sorting the array dominates.
+    ///     - Sliding window traversal is O(n).
+    ///
+    /// Space Complexity:
+    ///   • O(1) extra space
+    ///     - Ignoring sorting space.
+    ///
+    /// Problem Summary:
+    ///   Given an integer array `nums` and an integer `k`,
+    ///   choose any `k` elements such that the difference between
+    ///   the maximum and minimum elements is minimized.
+    ///
+    /// Key Insight:
+    ///   - After sorting, the optimal `k` elements must be consecutive.
+    ///   - Use a sliding window of size `k` over the sorted array.
+    /// -----------------------------------------------------------------------
     func minimumDifference(_ nums: [Int], _ k: Int) -> Int {
-        if k < 1 { return 0 }
-
-        let slidingWindow = SlidingWindow(nums.sorted())
-        let inputNumsCount = nums.count
-        let windowSize = k
-
-        while slidingWindow.endIndex < inputNumsCount {
-            if slidingWindow.value.count == windowSize {
-                let minValue = Array(slidingWindow.startIndexValue).first!
-                let maxValue = Array(slidingWindow.endIndexValue).first!
-
-                let currentWindowDifference = maxValue - minValue
-                minimumDifference = min(minimumDifference, currentWindowDifference)
-
-                slidingWindow.startIndex += 1
-            }
-
-            slidingWindow.endIndex += 1
+        // If k <= 1, difference is always 0
+        guard k > 1 else { return 0 }
+        
+        let sortedNumbers = nums.sorted()
+        let totalCount = sortedNumbers.count
+        
+        var minDifference = Int.max
+        
+        // Slide a window of size k over the sorted array
+        for startIndex in 0...(totalCount - k) {
+            let endIndex = startIndex + k - 1
+            
+            let windowMin = sortedNumbers[startIndex]
+            let windowMax = sortedNumbers[endIndex]
+            
+            minDifference = min(minDifference, windowMax - windowMin)
         }
-
-        return minimumDifference
-    }
-}
-
-class SlidingWindow<T: Collection> {
-    let collection: T
-
-    var startIndex: Int
-    var endIndex: Int
-
-    var value: T.SubSequence { value(at: startIndex, endIndex: endIndex) }
-    var startIndexValue: T.SubSequence { value(at: startIndex) }
-    var endIndexValue: T.SubSequence { value(at: endIndex) }
-
-    init(_ collection: T, _ startIndex: Int = 0, _ endIndex: Int = 0) {
-        self.collection = collection
-        self.startIndex = startIndex
-        self.endIndex = endIndex
-    }
-
-    private func value(at index: Int) -> T.SubSequence { value(at: index, endIndex: index) }
-
-    private func value(at startIndex: Int, endIndex: Int) -> T.SubSequence {
-        let start = collection.index(collection.startIndex, offsetBy: startIndex)
-        let end = collection.index(collection.startIndex, offsetBy: endIndex)
-
-        return collection[start...end]
+        
+        return minDifference
     }
 }
