@@ -14,30 +14,52 @@
  * }
  */
 class Solution {
+    /// -----------------------------------------------------------------------
+    /// Time Complexity:
+    ///   • O(n)
+    ///     - Inorder traversal visits each node once.
+    ///     - Rebuilding the balanced BST also visits each node once.
+    ///
+    /// Space Complexity:
+    ///   • O(n)
+    ///     - Stores all nodes in an array (in sorted order).
+    ///     - Recursion stack is O(h) where h ≤ n, but dominated by O(n) array.
+    ///
+    /// Problem Summary:
+    ///   Given a BST, rebuild it into a height-balanced BST while preserving
+    ///   the in-order (sorted) sequence of values.
+    ///
+    /// Approach:
+    ///   1) Inorder traversal of the BST gives nodes in sorted order.
+    ///   2) Build a balanced BST from the sorted node list using the middle
+    ///      element as root (classic "sorted array to BST").
+    /// -----------------------------------------------------------------------
     func balanceBST(_ root: TreeNode?) -> TreeNode? {
-        var sortedNodes = [TreeNode]()
+        // Collect nodes in sorted order using inorder traversal.
+        var inorderNodes = [TreeNode]()
         
-        func inorder(_ node: TreeNode?) {
+        func inorderTraversal(_ node: TreeNode?) {
             guard let node = node else { return }
-            
-            inorder(node.left)
-            sortedNodes.append(node)
-            inorder(node.right)
+            inorderTraversal(node.left)
+            inorderNodes.append(node)
+            inorderTraversal(node.right)
         }
         
-        func build(_ nodes: [TreeNode], _ start: Int, _ end: Int) -> TreeNode? {
-            if start > end { return nil }
-  
-            let mid = (start+end) / 2
-            var node = nodes[mid] 
+        // Build a balanced BST from sorted nodes [start...end].
+        func buildBalancedBST(_ nodes: [TreeNode], _ start: Int, _ end: Int) -> TreeNode? {
+            guard start <= end else { return nil }
             
-            node.left = build(nodes, start, mid-1)
-            node.right = build(nodes, mid+1, end)
-
-            return node
+            let midIndex = (start + end) / 2
+            let rootNode = nodes[midIndex]
+            
+            // Reassign children to reflect the balanced structure.
+            rootNode.left = buildBalancedBST(nodes, start, midIndex - 1)
+            rootNode.right = buildBalancedBST(nodes, midIndex + 1, end)
+            
+            return rootNode
         }
         
-        inorder(root)
-        return build(sortedNodes, 0, sortedNodes.count-1)
+        inorderTraversal(root)
+        return buildBalancedBST(inorderNodes, 0, inorderNodes.count - 1)
     }
 }
