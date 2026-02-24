@@ -14,50 +14,53 @@
  * }
  */
 
-class Queue<T> {
-    private var array: [T] = []
-
-    var isEmpty: Bool { return array.isEmpty }
-
-    func enQueue(_ value: T) {
-        array.append(value)
-    }
-
-    func deQueue() -> T? {
-        if isEmpty { return nil }
-
-        return array.removeFirst()
-    }
-}
-
 class Solution {
-        func sumRootToLeaf(_ root: TreeNode?) -> Int {
-        if root == nil { return 0 }
-
-        var output = 0
-
-        let queue = Queue<String>()
-        findAllPaths(root, queue: queue, currentPath: "")
-
-        while queue.isEmpty == false {
-            if let currentSum = Int(queue.deQueue()!, radix: 2) {
-                output += currentSum
-            }
-        }
-
-        return output
+    /// -----------------------------------------------------------------------
+    /// Problem Summary:
+    ///   Each root-to-leaf path forms a binary number.
+    ///   Return the sum of all those binary numbers.
+    ///
+    /// Example:
+    ///   Tree:      1
+    ///             / \
+    ///            0   1
+    ///
+    ///   Paths:
+    ///       10 (2)
+    ///       11 (3)
+    ///
+    ///   Output: 5
+    ///
+    /// Strategy:
+    ///   - Perform DFS.
+    ///   - Build the current binary number using bit shifting:
+    ///         newValue = (previousValue << 1) | node.val
+    ///   - When reaching a leaf, add the number to the total.
+    ///
+    /// Time Complexity:
+    ///   • O(n)
+    ///     Each node is visited once.
+    ///
+    /// Space Complexity:
+    ///   • O(h)
+    ///     h = tree height (recursion stack).
+    /// -----------------------------------------------------------------------
+    func sumRootToLeaf(_ root: TreeNode?) -> Int {
+        return dfs(root, 0)
     }
 
-    func findAllPaths(_ root: TreeNode?, queue: Queue<String>, currentPath: String) {
-        if root == nil { return }
+    private func dfs(_ node: TreeNode?, _ currentValue: Int) -> Int {
+        guard let node = node else { return 0 }
 
-        let newPath = currentPath + String(root!.val)
+        // Build binary number so far
+        let updatedValue = (currentValue << 1) | node.val
 
-        if root?.left == nil && root?.right == nil {
-            queue.enQueue(newPath)
-        } else {
-            findAllPaths(root?.left, queue: queue, currentPath: newPath)
-            findAllPaths(root?.right, queue: queue, currentPath: newPath)
+        // If leaf node, return the completed binary number
+        if node.left == nil && node.right == nil {
+            return updatedValue
         }
+
+        // Otherwise, continue DFS
+        return dfs(node.left, updatedValue) + dfs(node.right, updatedValue)
     }
 }
