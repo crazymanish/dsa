@@ -6,3 +6,19 @@ Data Structure &amp; Algorithms (Swift language)
 [![Twitter: @iammanishrathi](https://img.shields.io/badge/Twitter-@iammanishrathi-blue.svg?style=flat)](https://twitter.com/iammanishrathi)
 ------
 **Consistency tracker:** ![![consistency days]](https://img.shields.io/badge/351-days-green.svg?style=flat)(last update: 20-Feb-2023)
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/crazymanish/dsa/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/crazymanish/dsa/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1545-find-kth-bit-in-nth-binary-string](https://github.com/crazymanish/dsa/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+<!---LeetCode Topics End-->
