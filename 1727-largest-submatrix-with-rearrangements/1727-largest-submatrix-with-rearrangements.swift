@@ -1,39 +1,61 @@
 class Solution {
+    /**
+     Problem Summary:
+     Given a binary matrix, we can rearrange columns independently per row.
+     Find the largest submatrix consisting only of 1s.
+
+     Strategy:
+     - Maintain an array `heights` where heights[col] represents the number of
+       consecutive 1s ending at the current row.
+     - For each row:
+        1. Update heights.
+        2. Sort heights in descending order (to simulate optimal column rearrangement).
+        3. For each index i, compute area = heights[i] * (i + 1).
+     - Track the maximum area.
+
+     Key Insight:
+     After sorting, using the first k columns gives width = k and height = heights[k-1].
+
+     Time Complexity:
+     O(n * m log m) due to sorting each row.
+
+     Space Complexity:
+     O(m) for heights array.
+     */
+    
     func largestSubmatrix(_ matrix: [[Int]]) -> Int {
-        let n = matrix.count
-        let m = matrix[0].count
-
-        var result = 0
-
-        // Array to store heights of each column, initialized with zeros.
-        var heights: [(index: Int, height: Int)] = Array(0..<m).map { ($0, 0) }
+        let rowCount = matrix.count
+        let columnCount = matrix[0].count
         
-        for i in 0..<n {
-            // Variable to track the current position in the heights array.
-            var k = 0
-
-            // Keep track of columns that are zeroed out.
-            var emptyColumns: [Int] = []
-            for (j, height) in heights {
-                // If the current element in the matrix is 1, update the height.
-                if matrix[i][j] == 1 {
-                    heights[k] = (j, height+1)
-                    k += 1
-
-                    // Update the result by calculating the area of the rectangle.
-                    result = max(result, k*(height+1))
+        var heights = Array(repeating: 0, count: columnCount)
+        var maxArea = 0
+        
+        for row in 0..<rowCount {
+            // Step 1: Update heights of consecutive 1s
+            for column in 0..<columnCount {
+                if matrix[row][column] == 1 {
+                    heights[column] += 1
                 } else {
-                    emptyColumns.append(j)
+                    heights[column] = 0
                 }
             }
-
-            // Append zeroed out columns to the end of the heights array.
-            for j in emptyColumns {
-                heights[k] = (j, 0)
-                k += 1
+            
+            // Step 2: Sort heights in descending order
+            let sortedHeights = heights.sorted(by: >)
+            
+            // Step 3: Compute max area for this row
+            for i in 0..<columnCount {
+                let height = sortedHeights[i]
+                
+                // If height is 0, no larger area can be formed beyond this
+                if height == 0 { break }
+                
+                let width = i + 1
+                let area = height * width
+                maxArea = max(maxArea, area)
             }
         }
-
-        return result
+        
+        return maxArea
     }
 }
