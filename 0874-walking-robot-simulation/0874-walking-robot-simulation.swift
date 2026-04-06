@@ -1,40 +1,75 @@
 class Solution {
+    /**
+     Problem Summary:
+     A robot starts at (0, 0) facing north. It receives a list of commands:
+     - Positive integers: move forward that many steps
+     - -1: turn right (90°)
+     - -2: turn left (90°)
+     
+     The robot must avoid obstacles. If it encounters one, it stops moving for that command.
+     Return the maximum Euclidean distance squared from the origin reached at any point.
+
+     Strategy:
+     - Represent direction as a vector (dx, dy)
+     - Use a Set to store obstacles for O(1) lookup
+     - Process each command:
+        - Rotate direction for -1 / -2
+        - Move step-by-step for forward commands, checking obstacles at each step
+     - Track the maximum distance squared after each command
+
+     Time Complexity:
+     O(N + K), where:
+     - N = number of commands
+     - K = total steps moved (sum of forward commands)
+
+     Space Complexity:
+     O(M), where M = number of obstacles
+     */
+
     func robotSim(_ commands: [Int], _ obstacles: [[Int]]) -> Int {
-        // Convert "obstacles" into a set, so they can be queried quickly.
-        // Interestingly, the solution will still be accepted if we remove
-        // this line but it will much slower.
-        let obstacles = Set(obstacles)
+        // Convert obstacles into a set for fast lookup
+        let obstacleSet = Set(obstacles)
 
-        // Start at the origin, facing north.
-        // Using vectors like this for the position and the direction
-        // makes computations much easier.
-        var pos = [0, 0], dir = [0, 1]
+        // Robot starts at origin facing north
+        var position = [0, 0]
+        var direction = [0, 1] // (dx, dy)
 
-        var res = 0
+        var maxDistanceSquared = 0
 
-        for k in commands {
-            switch k {
-            // This is a trick that can be used whenever we have to
-            // deal with rotations by 90 degrees on the plane.
-            // It can be checked by hand, by looking at all the different
-            // directions. Or one can check using the rotation formula.
-            case -2: dir = [-dir[1], dir[0]]  // Rotate left.
-            case -1: dir = [dir[1], -dir[0]]  // Rotate right.
-            default: 
-                // Try moving forward for k units.
-                for _ in 0..<k {
-                    // If next position is not an obstacle, move to it.
-                    // Otherwise move to the next command.
-                    let nextPos = [pos[0] + dir[0], pos[1] + dir[1]]
-                    if obstacles.contains(nextPos) { break }
-                    pos = nextPos
+        for command in commands {
+            switch command {
+
+            case -2:
+                // Rotate left: (dx, dy) -> (-dy, dx)
+                direction = [-direction[1], direction[0]]
+
+            case -1:
+                // Rotate right: (dx, dy) -> (dy, -dx)
+                direction = [direction[1], -direction[0]]
+
+            default:
+                // Move forward step-by-step
+                for _ in 0..<command {
+                    let nextPosition = [
+                        position[0] + direction[0],
+                        position[1] + direction[1]
+                    ]
+
+                    // Stop if obstacle is encountered
+                    if obstacleSet.contains(nextPosition) {
+                        break
+                    }
+
+                    // Update position
+                    position = nextPosition
                 }
             }
 
-            // Update max distance squared.
-            res = max(res, pos[0] * pos[0] + pos[1] * pos[1])
+            // Update max distance squared from origin
+            let distanceSquared = position[0] * position[0] + position[1] * position[1]
+            maxDistanceSquared = max(maxDistanceSquared, distanceSquared)
         }
 
-        return res
+        return maxDistanceSquared
     }
 }
