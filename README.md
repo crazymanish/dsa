@@ -32,6 +32,7 @@ Data Structure &amp; Algorithms (Swift language)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0657-robot-return-to-origin](https://github.com/crazymanish/dsa/tree/main/0657-robot-return-to-origin/) | Easy |
+| [0874-walking-robot-simulation](https://github.com/crazymanish/dsa/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/crazymanish/dsa/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
 | [2075-decode-the-slanted-ciphertext](https://github.com/crazymanish/dsa/tree/main/2075-decode-the-slanted-ciphertext/) | Medium |
 | [2751-robot-collisions](https://github.com/crazymanish/dsa/tree/main/2751-robot-collisions/) | Hard |
@@ -39,6 +40,7 @@ Data Structure &amp; Algorithms (Swift language)
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0874-walking-robot-simulation](https://github.com/crazymanish/dsa/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/crazymanish/dsa/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
 | [1594-maximum-non-negative-product-in-a-matrix](https://github.com/crazymanish/dsa/tree/main/1594-maximum-non-negative-product-in-a-matrix/) | Medium |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/crazymanish/dsa/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
@@ -93,6 +95,7 @@ Data Structure &amp; Algorithms (Swift language)
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0874-walking-robot-simulation](https://github.com/crazymanish/dsa/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1980-find-unique-binary-string](https://github.com/crazymanish/dsa/tree/main/1980-find-unique-binary-string/) | Medium |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/crazymanish/dsa/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/crazymanish/dsa/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
