@@ -1,39 +1,75 @@
 class Solution {
+    /**
+     Problem Summary:
+     Given the positions of robots and factories, where each factory can repair a limited
+     number of robots, return the minimum total distance required to repair all robots.
+
+     Strategy:
+     1. Sort robot positions.
+     2. Sort factories by position.
+     3. Expand each factory by its repair limit, so each expanded entry represents one
+        available repair slot at that factory position.
+     4. Use top-down dynamic programming:
+        - Either assign the current robot to the current factory slot
+        - Or skip the current factory slot
+     5. Memoize results for each `(robotIndex, factoryIndex)` state.
+
+     Time Complexity:
+     O(r * f), where:
+     - r = number of robots
+     - f = total expanded factory slots
+
+     Space Complexity:
+     O(r * f) for memoization, plus recursion stack depth O(r + f)
+     */
     func minimumTotalDistance(_ robot: [Int], _ factory: [[Int]]) -> Int {
-        let robots = robot.sorted()
+        let sortedRobots = robot.sorted()
 
-        // Flatten the factories. If a factory has some "limit",
-        // replace the factory with "limit" factories, each one
-        // being able to repair a single robot.
-        let factories = factory
+        // Expand factories so each repair capacity becomes one usable slot.
+        let factorySlots = factory
             .sorted { $0[0] < $1[0] }
-            .flatMap { Array(repeating: $0[0], count: $0[1]) }
-
-        var dp = Array(repeating: Array(repeating: -1, count:factories.count), count: robots.count)
-
-        return minimumTotalDistance(0, 0)
-
-        func minimumTotalDistance(_ robotStartIndex: Int, _ factoryStartIndex: Int) -> Int {
-            // Done, all robots have been repaired.
-            if robotStartIndex == robots.count { return 0 }
-
-            // No factories left. The current robot cannot be repaired.
-            if factoryStartIndex == factories.count { return 1_000_000_000_000 }
-
-            if dp[robotStartIndex][factoryStartIndex] >= 0 {
-                return dp[robotStartIndex][factoryStartIndex]
+            .flatMap { factoryInfo in
+                Array(repeating: factoryInfo[0], count: factoryInfo[1])
             }
 
-            // Assign the current robot to the current factory.
-            let assign = abs(factories[factoryStartIndex] - robots[robotStartIndex]) + 
-              minimumTotalDistance(robotStartIndex + 1, factoryStartIndex + 1)
+        let impossibleCost = 1_000_000_000_000
+        var memo = Array(
+            repeating: Array(repeating: -1, count: factorySlots.count),
+            count: sortedRobots.count
+        )
 
-            // Skip the current factory.
-            let skip = minimumTotalDistance(robotStartIndex, factoryStartIndex + 1)
+        return dfs(robotIndex: 0, factoryIndex: 0)
 
-            dp[robotStartIndex][factoryStartIndex] = min(assign, skip)
+        func dfs(robotIndex: Int, factoryIndex: Int) -> Int {
+            // All robots have been assigned successfully.
+            if robotIndex == sortedRobots.count {
+                return 0
+            }
 
-            return dp[robotStartIndex][factoryStartIndex]
+            // No factory slots left, but robots still remain.
+            if factoryIndex == factorySlots.count {
+                return impossibleCost
+            }
+
+            // Return cached result if this state was already computed.
+            if memo[robotIndex][factoryIndex] != -1 {
+                return memo[robotIndex][factoryIndex]
+            }
+
+            // Option 1: Assign the current robot to the current factory slot.
+            let assignCurrentRobot =
+                abs(factorySlots[factoryIndex] - sortedRobots[robotIndex]) +
+                dfs(robotIndex: robotIndex + 1, factoryIndex: factoryIndex + 1)
+
+            // Option 2: Skip this factory slot and try the next one.
+            let skipCurrentFactorySlot = dfs(
+                robotIndex: robotIndex,
+                factoryIndex: factoryIndex + 1
+            )
+
+            // Store the best result for this state.
+            memo[robotIndex][factoryIndex] = min(assignCurrentRobot, skipCurrentFactorySlot)
+            return memo[robotIndex][factoryIndex]
         }
     }
 }
