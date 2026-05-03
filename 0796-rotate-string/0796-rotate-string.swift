@@ -1,38 +1,45 @@
 class Solution {
-    func rotateString(_ s: String, _ goal: String) -> Bool {
-        if s.isEmpty { return s == goal }
-        
-        if s.count != goal.count { return false }
-        
-        return (s + s).contains(goal) // abcdeabcde will contain bcdea
-    }
-}
+    /**
+     Problem Summary:
+     Determine if string `goal` can be obtained by repeatedly rotating string `s`.
+     A rotation means moving the first character to the end.
 
-/*
-class Solution {
-    // Time: O(n)
-    // Space: O(n)
+     Strategy:
+     - If lengths differ → impossible.
+     - Repeatedly rotate the string by moving the first character to the end.
+     - Stop when:
+       1. We match `goal` → return true
+       2. We return back to original string → all rotations exhausted → return false
+
+     Time Complexity:
+     O(n^2)
+     - Each rotation is O(n) due to string operations
+     - Up to n rotations
+
+     Space Complexity:
+     O(n)
+     - Temporary string copies during rotation
+     */
     func rotateString(_ s: String, _ goal: String) -> Bool {
-        let arrS = Array(Array(s) + Array(s))
-        let arrG = Array(goal)
-        
-        if arrS.count / 2 != arrG.count { 
-            return false 
-        }
-        
-        var j = 0
-        for i in 0..<arrS.count {
-            if arrS[i] == arrG[j] {
-                j += 1
-                if j == arrG.count { return true }
-            } else {
-                j = 0
-                if arrS[i] == arrG[j] {
-                    j += 1
-                }
+        // If lengths differ, rotation cannot match
+        guard s.count == goal.count else { return false }
+
+        var rotatedString = s
+
+        while true {
+            // Remove first character and append it to the end
+            let firstCharacter = String(rotatedString.removeFirst())
+            rotatedString += firstCharacter
+
+            // Check if current rotation matches target
+            if rotatedString == goal {
+                return true
+            }
+
+            // If we've returned to original string, all rotations are exhausted
+            if rotatedString == s {
+                return false
             }
         }
-        return false
     }
 }
-*/
