@@ -42,6 +42,7 @@ Data Structure &amp; Algorithms (Swift language)
 | [1914-cyclically-rotating-a-grid](https://github.com/crazymanish/dsa/tree/main/1914-cyclically-rotating-a-grid/) | Medium |
 | [2069-walking-robot-simulation-ii](https://github.com/crazymanish/dsa/tree/main/2069-walking-robot-simulation-ii/) | Medium |
 | [2075-decode-the-slanted-ciphertext](https://github.com/crazymanish/dsa/tree/main/2075-decode-the-slanted-ciphertext/) | Medium |
+| [2553-separate-the-digits-in-an-array](https://github.com/crazymanish/dsa/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
 | [2751-robot-collisions](https://github.com/crazymanish/dsa/tree/main/2751-robot-collisions/) | Hard |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/crazymanish/dsa/tree/main/2946-matrix-similarity-after-cyclic-shifts/) | Easy |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/crazymanish/dsa/tree/main/3653-xor-after-range-multiplication-queries-i/) | Medium |
@@ -69,6 +70,7 @@ Data Structure &amp; Algorithms (Swift language)
 | [2452-words-within-two-edits-of-dictionary](https://github.com/crazymanish/dsa/tree/main/2452-words-within-two-edits-of-dictionary/) | Medium |
 | [2463-minimum-total-distance-traveled](https://github.com/crazymanish/dsa/tree/main/2463-minimum-total-distance-traveled/) | Hard |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/crazymanish/dsa/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
+| [2553-separate-the-digits-in-an-array](https://github.com/crazymanish/dsa/tree/main/2553-separate-the-digits-in-an-array/) | Easy |
 | [2573-find-the-string-with-lcp](https://github.com/crazymanish/dsa/tree/main/2573-find-the-string-with-lcp/) | Hard |
 | [2615-sum-of-distances](https://github.com/crazymanish/dsa/tree/main/2615-sum-of-distances/) | Medium |
 | [2751-robot-collisions](https://github.com/crazymanish/dsa/tree/main/2751-robot-collisions/) | Hard |
