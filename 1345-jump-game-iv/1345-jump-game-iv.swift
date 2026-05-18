@@ -1,40 +1,90 @@
 class Solution {
+    /**
+     Problem Summary:
+     Given an array, start at index `0` and reach the last index using the minimum number of jumps.
+     From any index, you can jump to:
+     - `index + 1`
+     - `index - 1`
+     - Any other index with the same value as `arr[index]`
+
+     Strategy:
+     Use Breadth-First Search because each jump has equal cost.
+     Store all indices for each value in a dictionary so same-value jumps can be explored quickly.
+     After using all same-value jumps for a number, remove that number from the dictionary to avoid repeated processing.
+
+     Time Complexity:
+     O(n), because each index is visited once, and each value group is processed once.
+
+     Space Complexity:
+     O(n), for the value-to-indices dictionary, visited array, and BFS queue.
+     */
     func minJumps(_ arr: [Int]) -> Int {
-        var indexDict = [Int: [Int]]()
-        for (index, element) in arr.enumerated() {
-            indexDict[element, default: []].append(index)
+        let lastIndex = arr.count - 1
+
+        // Already at the destination.
+        if lastIndex == 0 { return 0 }
+
+        // Map each value to all indices where it appears.
+        var valueToIndices: [Int: [Int]] = [:]
+
+        for (index, value) in arr.enumerated() {
+            valueToIndices[value, default: []].append(index)
         }
 
-        var queue = [(index: Int, steps: Int)]()
-        queue.append((index: 0, steps: 0))
-        
-        var visited = Set<Int>()
-        visited.insert(0)
+        // BFS queue stores indices to visit.
+        // `steps` is tracked level-by-level instead of storing it with every queue element.
+        var queue = [0]
+        var head = 0
+        var steps = 0
 
-        while !queue.isEmpty {
-            var tempQueue = queue
-            queue.removeAll()
+        // Array is faster and simpler than Set<Int> when indices are bounded by arr.count.
+        var visited = Array(repeating: false, count: arr.count)
+        visited[0] = true
 
-            for element in tempQueue {
-                if element.index == arr.count - 1 {
-                    return element.steps
+        while head < queue.count {
+            let currentLevelCount = queue.count - head
+
+            // Process one BFS level, where all nodes are reachable in `steps` jumps.
+            for _ in 0..<currentLevelCount {
+                let currentIndex = queue[head]
+                head += 1
+
+                if currentIndex == lastIndex {
+                    return steps
                 }
-                
-                let currentIndex = element.index
-                var nextIndexes: [Int] = []
-                nextIndexes += currentIndex + 1 < arr.count ? [currentIndex + 1] : []
-                nextIndexes += currentIndex - 1 >= 0 ? [currentIndex - 1] : []
-                nextIndexes += indexDict[arr[currentIndex], default: []]
-                
-                // removing used indexes, so that its not added again (otherwise arr will become massive).
-                indexDict[arr[currentIndex]] = nil
-                for index in nextIndexes where !visited.contains(index) && (index < arr.count && index >= 0) {
-                   queue.append((index: index, steps: element.steps + 1))
-                   visited.insert(index)
+
+                let currentValue = arr[currentIndex]
+
+                // Collect all valid jump candidates:
+                // adjacent indices plus indices with the same value.
+                var nextIndices = valueToIndices[currentValue, default: []]
+
+                if currentIndex + 1 <= lastIndex {
+                    nextIndices.append(currentIndex + 1)
+                }
+
+                if currentIndex - 1 >= 0 {
+                    nextIndices.append(currentIndex - 1)
+                }
+
+                // Remove this value group after processing it once.
+                // This prevents repeatedly adding the same-value indices and keeps BFS O(n).
+                valueToIndices[currentValue] = nil
+
+                for nextIndex in nextIndices {
+                    // Skip indices that were already reached by a shorter or equal path.
+                    if visited[nextIndex] {
+                        continue
+                    }
+
+                    visited[nextIndex] = true
+                    queue.append(nextIndex)
                 }
             }
+
+            steps += 1
         }
-        
+
         return -1
     }
 }
