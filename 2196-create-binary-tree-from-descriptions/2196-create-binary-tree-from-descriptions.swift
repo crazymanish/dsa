@@ -13,39 +13,63 @@
  *     }
  * }
  */
+ 
+/**
+ * Problem Summary:
+ * Build a binary tree from descriptions where each description contains:
+ * - parent value
+ * - child value
+ * - whether the child is a left child or right child
+ *
+ * Strategy:
+ * Use one dictionary to map each value to its TreeNode so every value has exactly one node object.
+ * Use a set to track all values that appear as children.
+ * After connecting all nodes, the root is the only parent value that never appears as a child.
+ *
+ * Time Complexity: O(n)
+ * - We process each description once.
+ *
+ * Space Complexity: O(n)
+ * - We store nodes and child values for all unique values.
+ */
 class Solution {
     func createBinaryTree(_ descriptions: [[Int]]) -> TreeNode? {
-        if descriptions.isEmpty { return nil }
-        
-        var parentHashMap: [Int : TreeNode] = [:]
-        var childHashMap: [Int : TreeNode] = [:]
-        
+        var nodesByValue: [Int: TreeNode] = [:]
+        var childValues = Set<Int>()
+
         for description in descriptions {
-            let parentNodeValue = description[0]
-            let childNodeValue = description[1]
-            
-            let parentNode = parentHashMap[parentNodeValue] ?? childHashMap[parentNodeValue] ?? TreeNode(parentNodeValue)
-            let childNode =  childHashMap[childNodeValue] ?? parentHashMap[childNodeValue] ?? TreeNode(childNodeValue)
-            
-            if description[2] == 1 {
+            let parentValue = description[0]
+            let childValue = description[1]
+            let isLeftChild = description[2] == 1
+
+            // Reuse existing nodes if already created, otherwise create them.
+            let parentNode = nodesByValue[parentValue] ?? TreeNode(parentValue)
+            let childNode = nodesByValue[childValue] ?? TreeNode(childValue)
+
+            // Store nodes back to ensure future references reuse the same objects.
+            nodesByValue[parentValue] = parentNode
+            nodesByValue[childValue] = childNode
+
+            // Connect the child to the correct side of the parent.
+            if isLeftChild {
                 parentNode.left = childNode
             } else {
                 parentNode.right = childNode
             }
-            
-            parentHashMap[parentNodeValue] = parentNode
-            childHashMap[childNodeValue] = childNode
+
+            // Any node that appears as a child cannot be the root.
+            childValues.insert(childValue)
         }
-        
-        var rootNode: TreeNode? = nil
-        
-        for (key, value) in parentHashMap {
-            if childHashMap[key] == nil {
-                rootNode = value
-                break
+
+        // The root is the only node value that never appears as a child.
+        for description in descriptions {
+            let parentValue = description[0]
+
+            if !childValues.contains(parentValue) {
+                return nodesByValue[parentValue]
             }
         }
-        
-        return rootNode
+
+        return nil
     }
 }
