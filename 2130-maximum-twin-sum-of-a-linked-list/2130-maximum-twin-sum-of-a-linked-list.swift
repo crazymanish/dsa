@@ -8,56 +8,62 @@
  *     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
  * }
  */
+
 class Solution {
+    /**
+     Problem Summary:
+     Given a linked list with an even number of nodes, return the maximum twin sum.
+     A twin pair is formed by the i-th node from the start and the i-th node from the end.
+
+     Strategy:
+     Use fast and slow pointers to find the middle of the list while reversing the first half.
+     Then compare the reversed first half with the second half to find the maximum twin sum.
+     Finally, restore the first half back to its original direction while traversing.
+
+     Time Complexity:
+     O(n), where n is the number of nodes in the linked list.
+
+     Space Complexity:
+     O(1), because the list is reversed in-place.
+     */
     func pairSum(_ head: ListNode?) -> Int {
-        if head?.next == nil { return head!.val }
+        var fastPointer = head
+        var slowPointer = head
+        var reversedFirstHalfHead: ListNode?
 
-        var pointer1 = head
-        var pointer2 = head
+        // Reverse the first half while finding the middle.
+        while fastPointer != nil {
+            let nextSlowNode = slowPointer?.next
+            let nextFastNode = fastPointer?.next?.next
 
-        // Run pointer2 with double speed to find the mid-node
-        while pointer2?.next?.next != nil {
-            pointer1 = pointer1?.next
-            pointer2 = pointer2?.next?.next
+            slowPointer?.next = reversedFirstHalfHead
+            reversedFirstHalfHead = slowPointer
+
+            slowPointer = nextSlowNode
+            fastPointer = nextFastNode
         }
 
-        // We are now middle of LinkedList, lets reset the pointer agains
-        // but List maybe EVEN or ODD
-        // if pointer2?.next == nil { pointer2 = pointer1 } // ODD
-        if pointer2?.next?.next == nil { pointer2 = pointer1?.next } // EVEN
-        
-        
-        func reverseList(_ head: ListNode?, _ previous: ListNode?) -> ListNode? {
-            if head == nil { return previous }
+        var firstHalfNode = reversedFirstHalfHead
+        var secondHalfNode = slowPointer
+        var restoredPreviousNode = slowPointer
+        var maximumTwinSum = 0
 
-            let next = head?.next
-            head?.next = previous
+        // Compare both halves and restore the reversed first half.
+        while firstHalfNode != nil {
+            maximumTwinSum = max(
+                maximumTwinSum,
+                firstHalfNode!.val + secondHalfNode!.val
+            )
 
-            return reverseList(next, head)
+            let nextFirstHalfNode = firstHalfNode?.next
+
+            firstHalfNode?.next = restoredPreviousNode
+            restoredPreviousNode = firstHalfNode
+
+            firstHalfNode = nextFirstHalfNode
+            secondHalfNode = secondHalfNode?.next
         }
 
-        func pairSum(_ head1: ListNode?, _ head2: ListNode?) -> Int {
-            var pointer1 = head1
-            var pointer2 = head2
-
-            var maxSum = Int.min
-
-            while pointer2 != nil {
-                let currentPairSum = pointer1!.val + pointer2!.val
-                maxSum = max(maxSum, currentPairSum)
-
-                pointer1 = pointer1?.next
-                pointer2 = pointer2?.next
-            }
-
-            return maxSum
-        }
-        
-
-        // Reset pointer1 with head & reverse pointer2
-        pointer1 = head
-        pointer2 = reverseList(pointer2, nil)
-
-        return pairSum(pointer1, pointer2)
+        return maximumTwinSum
     }
 }
