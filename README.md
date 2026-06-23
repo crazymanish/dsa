@@ -186,6 +186,7 @@ Data Structure &amp; Algorithms (Swift language)
 | [3559-number-of-ways-to-assign-edge-weights-ii](https://github.com/crazymanish/dsa/tree/main/3559-number-of-ways-to-assign-edge-weights-ii/) | Hard |
 | [3660-jump-game-ix](https://github.com/crazymanish/dsa/tree/main/3660-jump-game-ix/) | Medium |
 | [3661-maximum-walls-destroyed-by-robots](https://github.com/crazymanish/dsa/tree/main/3661-maximum-walls-destroyed-by-robots/) | Hard |
+| [3699-number-of-zigzag-arrays-i](https://github.com/crazymanish/dsa/tree/main/3699-number-of-zigzag-arrays-i/) | Hard |
 | [3742-maximum-path-score-in-a-grid](https://github.com/crazymanish/dsa/tree/main/3742-maximum-path-score-in-a-grid/) | Medium |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/crazymanish/dsa/tree/main/3751-total-waviness-of-numbers-in-range-i/) | Medium |
 | [3753-total-waviness-of-numbers-in-range-ii](https://github.com/crazymanish/dsa/tree/main/3753-total-waviness-of-numbers-in-range-ii/) | Hard |
@@ -239,6 +240,7 @@ Data Structure &amp; Algorithms (Swift language)
 | [3225-maximum-score-from-grid-operations](https://github.com/crazymanish/dsa/tree/main/3225-maximum-score-from-grid-operations/) | Hard |
 | [3546-equal-sum-grid-partition-i](https://github.com/crazymanish/dsa/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
 | [3548-equal-sum-grid-partition-ii](https://github.com/crazymanish/dsa/tree/main/3548-equal-sum-grid-partition-ii/) | Hard |
+| [3699-number-of-zigzag-arrays-i](https://github.com/crazymanish/dsa/tree/main/3699-number-of-zigzag-arrays-i/) | Hard |
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
