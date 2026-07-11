@@ -1,37 +1,76 @@
 class Solution {
+    /**
+     Problem Summary:
+     Count the connected components in an undirected graph where every pair of
+     nodes within each component is directly connected.
+
+     Strategy:
+     1. Build an adjacency list using sets of neighboring nodes.
+     2. Use depth-first search to collect every node in each connected component.
+     3. A component containing `k` nodes is complete when every node has exactly
+        `k - 1` neighbors.
+
+     Time Complexity:
+     O(V + E), where V is `nodeCount` and E is the number of edges.
+
+     Space Complexity:
+     O(V + E) for the adjacency list, visited set, component nodes, and recursion stack.
+     */
     func countCompleteComponents(_ nodeCount: Int, _ edgeList: [[Int]]) -> Int {
-        var adjacencyList = [Int: Set<Int>]() // Adjacency list: node -> set of neighbors
+        var adjacencyList = [Int: Set<Int>]()
+
+        // Build the undirected graph.
         for edge in edgeList {
-            adjacencyList[edge[0], default: []].insert(edge[1]) // Add neighbor to source node's set
-            adjacencyList[edge[1], default: []].insert(edge[0]) // Add neighbor to destination node's set (undirected)
+            let firstNode = edge[0]
+            let secondNode = edge[1]
+
+            adjacencyList[firstNode, default: []].insert(secondNode)
+            adjacencyList[secondNode, default: []].insert(firstNode)
         }
 
-        var visitedNodes = Set<Int>() // Set to track visited nodes
-        var completeComponentCount = 0 // Count of complete components
+        var visitedNodes = Set<Int>()
+        var completeComponentCount = 0
 
-        // Depth-First Search to get the size of a connected component
-        func getComponentSize(_ startNode: Int) -> Int {
-            guard let neighbors = adjacencyList[startNode] else { return 0 } // If no neighbors, component size is 0
-            var componentSize = 0 // Initialize component size
+        // Collect all nodes belonging to the current connected component.
+        func collectComponentNodes(
+            from currentNode: Int,
+            into componentNodes: inout [Int]) {
+            visitedNodes.insert(currentNode)
+            componentNodes.append(currentNode)
 
-            for neighborNode in neighbors where !visitedNodes.contains(neighborNode) {
-                visitedNodes.insert(neighborNode) // Mark neighbor as visited
-                componentSize += 1 + getComponentSize(neighborNode) // Add neighbor and its subtree size
+            for neighborNode in adjacencyList[currentNode, default: []] {
+                guard !visitedNodes.contains(neighborNode) else {
+                    continue
+                }
+
+                collectComponentNodes(
+                    from: neighborNode,
+                    into: &componentNodes
+                )
             }
-            return componentSize
         }
 
-        // Iterate through all nodes to find connected components
-        for nodeIndex in 0..<nodeCount where !visitedNodes.contains(nodeIndex) {
-            let neighbors = adjacencyList[nodeIndex, default: []] // Get neighbors of the current node
-            let componentSize = getComponentSize(nodeIndex) // Get the size of the component
+        // Process each connected component exactly once.
+        for node in 0..<nodeCount {
+            guard !visitedNodes.contains(node) else {
+                continue
+            }
 
-            // Check if the component is complete
-            guard neighbors.isEmpty || ([nodeIndex] + neighbors).allSatisfy({ adjacencyList[$0, default: []].count == componentSize - 1 }) else { continue }
+            var componentNodes = [Int]()
+            collectComponentNodes(from: node, into: &componentNodes)
 
-            completeComponentCount += 1 // Increment count if component is complete
+            let requiredNeighborCount = componentNodes.count - 1
+
+            // In a complete component, every node connects to every other node.
+            let isCompleteComponent = componentNodes.allSatisfy { componentNode in
+                adjacencyList[componentNode, default: []].count == requiredNeighborCount
+            }
+
+            if isCompleteComponent {
+                completeComponentCount += 1
+            }
         }
 
-        return completeComponentCount // Return the count of complete components
+        return completeComponentCount
     }
 }
