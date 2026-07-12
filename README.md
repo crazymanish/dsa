@@ -74,6 +74,7 @@ Data Structure &amp; Algorithms (Swift language)
 | [1288-remove-covered-intervals](https://github.com/crazymanish/dsa/tree/main/1288-remove-covered-intervals/) | Medium |
 | [1301-number-of-paths-with-max-score](https://github.com/crazymanish/dsa/tree/main/1301-number-of-paths-with-max-score/) | Hard |
 | [1306-jump-game-iii](https://github.com/crazymanish/dsa/tree/main/1306-jump-game-iii/) | Medium |
+| [1331-rank-transform-of-an-array](https://github.com/crazymanish/dsa/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/crazymanish/dsa/tree/main/1340-jump-game-v/) | Hard |
 | [1345-jump-game-iv](https://github.com/crazymanish/dsa/tree/main/1345-jump-game-iv/) | Hard |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/crazymanish/dsa/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -220,6 +221,7 @@ Data Structure &amp; Algorithms (Swift language)
 | ------- | ------- |
 | [0874-walking-robot-simulation](https://github.com/crazymanish/dsa/tree/main/0874-walking-robot-simulation/) | Medium |
 | [1189-maximum-number-of-balloons](https://github.com/crazymanish/dsa/tree/main/1189-maximum-number-of-balloons/) | Easy |
+| [1331-rank-transform-of-an-array](https://github.com/crazymanish/dsa/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1345-jump-game-iv](https://github.com/crazymanish/dsa/tree/main/1345-jump-game-iv/) | Hard |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/crazymanish/dsa/tree/main/1358-number-of-substrings-containing-all-three-characters/) | Medium |
 | [1674-minimum-moves-to-make-array-complementary](https://github.com/crazymanish/dsa/tree/main/1674-minimum-moves-to-make-array-complementary/) | Medium |
@@ -384,6 +386,7 @@ Data Structure &amp; Algorithms (Swift language)
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1288-remove-covered-intervals](https://github.com/crazymanish/dsa/tree/main/1288-remove-covered-intervals/) | Medium |
+| [1331-rank-transform-of-an-array](https://github.com/crazymanish/dsa/tree/main/1331-rank-transform-of-an-array/) | Easy |
 | [1340-jump-game-v](https://github.com/crazymanish/dsa/tree/main/1340-jump-game-v/) | Hard |
 | [1665-minimum-initial-energy-to-finish-tasks](https://github.com/crazymanish/dsa/tree/main/1665-minimum-initial-energy-to-finish-tasks/) | Hard |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/crazymanish/dsa/tree/main/1727-largest-submatrix-with-rearrangements/) | Medium |
